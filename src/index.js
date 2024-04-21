@@ -6,6 +6,8 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import Navbar from './shared/Navbar';
+import NavList from './shared/components/NavList';
 // import reportWebVitals from './reportWebVitals';
 
 
@@ -13,6 +15,14 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <div className='bg-slate-200 h-screen flex justify-center items-center'><h1 className=' flex justify-center items-center bg-white p-5 rounded-lg font-bold drop-shadow-lg text-bold text-center text-blue-700'>Hi Guys! 👋<br /> Welcome to the Chowdeck FullStack Project clone onboarding 🎉. <br /> Please kindly go through the README.md file - not the readme.md.txt file - for necessary instructions 🤭. <br /> Happy coding guys! 🚀</h1></div>,
+  },
+  {
+    path: '/navbar',
+    element: <Navbar />
+  },
+  {
+    path: '/navlist',
+    element: <NavList />
   },
 ]);
 const root = ReactDOM.createRoot(document.getElementById('root'));
