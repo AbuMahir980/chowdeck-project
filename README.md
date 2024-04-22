@@ -1,8 +1,8 @@
-# CHOWDECK PROJECT REPO GUIDE
+# CHWDCK PROJECT REPO GUIDE
 
 **Welcome to the project repository! This guide outlines the workflow and best practices for collaborating on the Chowdeck project.**
 
-PS: Right click on this file in the primary side bar, locate open preview to preview this ChowdeckProject.README.md file
+PS: Right click on this file in the primary side bar, locate open preview to preview this ChwdckProject.README.md file
 
 ## Workflow Overview:
 
