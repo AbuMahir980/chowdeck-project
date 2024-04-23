@@ -1,47 +1,41 @@
-import logo from '../assets/logo.svg'
-import dropdown from '../assets/chevroletdown.svg'
-import shoppingcart from '../assets/shoppingcart.svg'
-import { useState } from 'react'
+import logo from '../assets/logo.svg';
+import shoppingCart from '../assets/shoppingcart.svg';
+import hamburger from '../assets/hamburger.svg'
+import { useState } from 'react';
+import NavList from './components/NavList';
 
 const Navbar = () => {
 
-    // const [dropDown, setDropDown] = useState(false)
-    
-    // const handleDropDown = () => {
-    //     setDropDown(!dropDown)
-    // }
-    const [isHovered, setIsHovered] = useState(false);
-    const handleMouseOver = () => {
-        setIsHovered(true);
-    };
+    const [isOpen, setIsOpen] = useState(false);
 
-    const handleMouseOut = () => {
-        setIsHovered(false);
+    const toggleMenu = () => {
+        setIsOpen(!isOpen);
     };
 
     return(
-            <nav className='flex flex-row justify-between items-center'>
-                <div className=''>
-                    <a className='flex'>
-                        <img src={logo} alt="Logo" /><span>chowdeck</span>
+        
+        <nav className='flex items-center justify-center h-20 bg-transparent shadow'>
+            <div className='container mx-auto px-4 flex justify-between items-center w-full h-full'>
+                <a href="" className='bg-[#0c513f] rounded-full h-12 w-12 pl-3 pt-3 pb-2 pr-2'>
+                    <img src={logo} alt=""/>
+                </a>
+            
+                <div className='flex gap-3'>
+                    <a href="" className='bg-white rounded-full p-3'>
+                        <img src={shoppingCart} alt="" />
                     </a>
-                </div>
-                <div>
-                    <a href="">Relay</a>
-                    <a href="">Company</a>
-                    <a href="">FAQs</a>
-                    <a href="">Blog</a>
-                    <a href="">Contact</a>
-                </div>
-                <div>
-                    <button onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
-                        <span>Customers</span><img src={dropdown} alt="" />
+                    <div>
+                        <button className='pb-3 bg-[#0c513f] rounded-full p-3 ' onClick={toggleMenu}>
+                        <img src={hamburger} alt="" />
                     </button>
-                    <button>
-                        <img src={shoppingcart} alt="" />
-                    </button>
+                    {isOpen && <NavList onClose={() => setIsOpen(false)}/>}
+                    </div>
+                    
                 </div>
-            </nav>
+            </div>
+            
+        </nav>
+        
     )
 }
 
