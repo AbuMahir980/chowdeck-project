@@ -20,10 +20,6 @@ const router = createBrowserRouter([
     path: '/navbar',
     element: <Navbar />
   },
-  {
-    path: '/navlist',
-    element: <NavList />
-  },
 ]);
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
