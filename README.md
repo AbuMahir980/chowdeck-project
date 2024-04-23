@@ -1,8 +1,8 @@
-# CHOWDECK PROJECT REPO GUIDE
+# CHWDCK PROJECT REPO GUIDE
 
-**Welcome to the project repository! This guide outlines the workflow and best practices for collaborating on the Chowdeck project.**
+**Welcome to the project repository! This guide outlines the workflow and best practices for collaborating on the Chwdeck project.**
 
-PS: Right click on this file in the primary side bar, locate open preview to preview this ChowdeckProject.README.md file
+PS: Right click on this file in the primary side bar, locate open preview to preview this ChwdckProject.README.md file
 
 ## Workflow Overview:
 
@@ -56,4 +56,4 @@ PS: Notice how I create a folder for my own part, e.g., vendor:
    - `components > vendor > Card.js, Button.js, etc.`
    - `assets > vendor > vendor.svg, vendorImage/, etc.`
 
-**By following this workflow, we can maintain a structured and efficient development process for the Chowdeck project. If you have any questions or encounter any issues, don't hesitate to reach out to the team for assistance. Happy coding! 🚀**
+**By following this workflow, we can maintain a structured and efficient development process for the Chwdeck project. If you have any questions or encounter any issues, don't hesitate to reach out to the team for assistance. Happy coding! 🚀**
