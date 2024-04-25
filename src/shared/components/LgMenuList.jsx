@@ -10,7 +10,7 @@ const LgMenuList = () => {
     };
 
     return(
-            <ul className="bg-white rounded-full flex items-center justify-around gap-12 px-14 py-4 w-fit drop-shadow">
+            <ul className="hidden lg:flex bg-white rounded-full items-center justify-around gap-12 px-14 py-4 w-fit drop-shadow">
                 {lgItems.map((item, index) => (
                         <li
                             href=""

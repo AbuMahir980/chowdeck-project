@@ -23,7 +23,7 @@ const Navbar = () => {
                 <LgMenuList />
             
                 <div className='flex gap-3'>
-                    <Client />
+                    {/* <Client /> */}
                     <a href="" className='bg-white rounded-full p-3'>
                         <img src={shoppingCart} alt="" />
                     </a>
