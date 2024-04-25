@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 import Navbar from './shared/Navbar';
 import NavList from './shared/components/NavList';
+import LgMenuList from './shared/components/LgMenuList';
 // import reportWebVitals from './reportWebVitals';
 
 
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
   {
     path: '/navbar',
     element: <Navbar />
+  },
+  {
+    path: '/lgmenulist',
+    element: <LgMenuList />
   },
 ]);
 const root = ReactDOM.createRoot(document.getElementById('root'));

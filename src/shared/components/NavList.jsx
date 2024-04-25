@@ -1,14 +1,6 @@
 import shoppingCart from '../../assets/shoppingcart.svg';
 import exit from '../../assets/exit.svg';
-import parcel from '../../assets/parcel.svg';
-import bike from '../../assets/bike.svg';
-import vendor from '../../assets/vendor.svg';
-import rider from '../../assets/rider.svg';
-import company from '../../assets/company.svg';
-import blog from '../../assets/blog.svg';
-import contact from '../../assets/contact.svg';
-import star from '../../assets/star.svg';
-import circle from '../../assets/circle.svg';
+import { items } from '../../utils/ListItems';
 import { useState } from 'react';
 
 
@@ -19,17 +11,7 @@ const NavList = ({onClose}) => {
         setActiveIndex(index === activeIndex ? null : index);
     };
 
-    const items = [
-        { text: 'Customers', icon: parcel },
-        { text: 'Relay', icon: bike },
-        { text: 'Vendors', icon: vendor },
-        { text: 'Riders', icon: rider },
-        { text: 'Company', icon: company },
-        { text: 'Blog', icon: blog },
-        { text: 'Contact', icon: contact },
-        { text: 'Twitter', icon: star },
-        { text: 'Instagram', icon: circle }
-    ];
+    
 
     return (
             <div className='fixed top-0 left-0 h-screen w-screen bg-black flex flex-col divide-y divide-gray-500 divide-opacity-30 transition delay-1000 duration-1000 ease-in-out'>

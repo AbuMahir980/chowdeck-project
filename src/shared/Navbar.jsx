@@ -3,6 +3,7 @@ import hamburger from '../assets/hamburger.svg'
 import { useState } from 'react';
 import NavList from './components/NavList';
 import BrandLogo from './components/BrandLogo';
+import LgMenuList from './components/LgMenuList';
 
 const Navbar = () => {
 
@@ -14,9 +15,11 @@ const Navbar = () => {
 
     return(
         
-        <nav className='flex items-center justify-center h-20 bg-transparent shadow'>
+        <nav className='flex items-center justify-center h-20'>
             <div className='container mx-auto px-4 flex justify-between items-center w-full h-full'>
                 <BrandLogo/>
+
+                <LgMenuList />
             
                 <div className='flex gap-3'>
                     <a href="" className='bg-white rounded-full p-3'>
