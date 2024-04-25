@@ -4,6 +4,7 @@ import { useState } from 'react';
 import NavList from './components/NavList';
 import BrandLogo from './components/BrandLogo';
 import LgMenuList from './components/LgMenuList';
+import Client from './components/Clients';
 
 const Navbar = () => {
 
@@ -22,6 +23,7 @@ const Navbar = () => {
                 <LgMenuList />
             
                 <div className='flex gap-3'>
+                    <Client />
                     <a href="" className='bg-white rounded-full p-3'>
                         <img src={shoppingCart} alt="" />
                     </a>
