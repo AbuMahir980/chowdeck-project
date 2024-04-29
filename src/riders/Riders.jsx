@@ -5,12 +5,14 @@ import applelogo from '../assets/far assets1/apple-Logo.png'
 import playstore from '../assets/far assets1/playstore-logo.avif'
 import Info from './Info'
 import Cards from './shared/cards'
+import Navbar from '../shared/Navbar'
 
 
 
 const Riders = () => {
     return (
         <div className="">
+            <Navbar/>
             <div className='flex-col gap-[7rem] '>
                 <div className="bg-[#0c513f] p-5">
 
@@ -24,7 +26,7 @@ const Riders = () => {
                             </div>
                         </div>
                         <div className=""> <img src={bgImage} alt="" /></div>.
-                       
+                    
                     </div>
                 </div>
 
