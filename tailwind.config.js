@@ -6,9 +6,13 @@ module.exports = {
   ],
   theme: {
     extend: {
+          fontFamily: {
+        "plusJakarta": ["Plus Jakarta Sans", "sans-serif"]
+      },
       backgroundImage:{
-        'hero': "url('/src/assets/vendors/hero.svg')",
-      }
+        'bgImage':"url('/src/assets/customersImg/customerHerobg.svg')",
+        'hero': "url('/src/assets/vendors/hero.svg')"
+      } 
     },
   },
   plugins: [],

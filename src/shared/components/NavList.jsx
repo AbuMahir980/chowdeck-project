@@ -17,7 +17,7 @@ const NavList = ({onClose}) => {
             <div className='fixed top-0 left-0 h-screen w-screen bg-black flex flex-col divide-y divide-gray-500 divide-opacity-30 transition delay-1000 duration-1000 ease-in-out'>
                 
                 <div className='flex justify-end items-end align-middle pb-6 h-[113px] pr-2 gap-4 sticky top-0 z-10'>
-                    <a href="" className='bg-white rounded-full p-3'>
+                    <a href="#" className='bg-white rounded-full p-3'>
                         <img src={shoppingCart} alt="" />
                     </a>
                     <button className='pb-2 ' onClick={onClose}>
@@ -28,7 +28,7 @@ const NavList = ({onClose}) => {
                 <div className='overflow-y-scroll  flex-1 divide-y divide-gray-500 divide-opacity-30'>
                     {items.map((item, index) => (
                         <a
-                            href=""
+                            href="#"
                             key={index}
                             className={`text-white flex items-center h-20 gap-3 font-medium text-xl hover:bg-[#0c513f] pl-10 ${activeIndex === index ? 'text-yellow-500' : ''}`}
                             onClick={() => handleActive(index)}

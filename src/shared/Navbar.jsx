@@ -1,3 +1,4 @@
+
 import shoppingCart from '../assets/shoppingcart.svg';
 import hamburger from '../assets/hamburger.svg'
 import { useState } from 'react';
@@ -7,7 +8,6 @@ import LgMenuList from './components/LgMenuList';
 
 
 const Navbar = () => {
-
     const [isOpen, setIsOpen] = useState(false);
 
     const toggleMenu = () => {
