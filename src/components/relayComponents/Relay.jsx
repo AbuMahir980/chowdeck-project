@@ -5,10 +5,11 @@ import googlePlayStore from '../../components/relayComponents/relayAssets/google
 import appleStore from '../../components/relayComponents/relayAssets/appleStore.svg'
 import boxOne from '../../components/relayComponents/relayAssets/boxOne.svg'
 import heroThunder from '../../components/relayComponents/relayAssets/heroThunder.svg'
-// import {cards} from '../../components/relayComponents/cards'
-
+import Carousel from './Carousel'
+import { cards } from './cards'
 const Relay = () => {
-  
+
+
   return (
     
     <>
@@ -36,10 +37,7 @@ const Relay = () => {
 </div>
 
 <h3 className='font-sans font-medium pl-5 mt-20 md:mt-8 lg:mt-28 text-2xl md:text-[64px] md:font-bold'>How Relay Works</h3>
-<div className='flex flex-row mt-20 space-x-10 items-center'>
-    {/* {cards.map((card)=>(       */}
-    <>
-      
+{/* <div className='flex flex-row mt-20 space-x-10 items-center'>
       <div  className='w-[15%] bg-[pink] h-[30vh]'>
       <h2>first card</h2>
     </div>
@@ -56,12 +54,10 @@ const Relay = () => {
     <div className='w-[15%] bg-[green] h-[30vh]'>
       <h2>third card</h2>
     </div>
-      </>
-
+</div> */}
+<div className="mt-5 ">
+<Carousel cards={cards} interval={3000} />
 </div>
-  
-
-   
 
 </>
 
