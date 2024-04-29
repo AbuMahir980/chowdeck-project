@@ -8,22 +8,26 @@ import {
 } from "react-router-dom";
 import Navbar from './shared/Navbar';
 import NavList from './shared/components/NavList';
+<<<<<<< HEAD
 import Blog from './pages/blog/Blog';
+=======
+import LgMenuList from './shared/components/LgMenuList';
+>>>>>>> 4b7dea708f31e3968bb081b643f62e3d60f83384
 // import reportWebVitals from './reportWebVitals';
  
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <div className='bg-slate-200 h-screen flex justify-center items-center'><h1 className=' flex justify-center items-center bg-white p-5 rounded-lg font-bold drop-shadow-lg text-bold text-center text-blue-700'>Hi Guys! 👋<br /> Welcome to the Chowdeck FullStack Project clone onboarding 🎉. <br /> Please kindly go through the README.md file - not the readme.md.txt file - for necessary instructions 🤭. <br /> Happy coding guys! 🚀</h1></div>,
+    element: <div className='bg-slate-200 h-screen flex justify-center items-center'><h1 className=' flex justify-center items-center bg-white p-5 rounded-lg font-bold drop-shadow-lg text-bold text-center text-blue-700'>Hi Guys! 👋<br /> Welcome to the Chwdck FullStack Project clone onboarding 🎉. <br /> Please kindly go through the README.md file - not the readme.md.txt file - for necessary instructions 🤭. <br /> Happy coding guys! 🚀</h1></div>,
   },
   {
     path: '/navbar',
     element: <Navbar />
   },
   {
-    path: '/navlist',
-    element: <NavList />
+    path: '/lgmenulist',
+    element: <LgMenuList />
   },
   {
    path:'/blog' ,
