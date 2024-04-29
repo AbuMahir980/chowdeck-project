@@ -1,13 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './styles/index.css';
+import Info from './riders/Info'
 
 import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
 import Navbar from './shared/Navbar';
+import Riders from './riders/Riders';
 import Vendors from './pages/vendors/Vendors';
+
 // import reportWebVitals from './reportWebVitals';
 
 
@@ -24,11 +27,16 @@ const router = createBrowserRouter([
     path: '/vendors',
     element: <Vendors />
   },
+  {
+    path: '/riders',
+    element: <Riders />
+  }
 ]);
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <RouterProvider router={router} />
+    {/* <Info/> */}
   </React.StrictMode>
 );
 
