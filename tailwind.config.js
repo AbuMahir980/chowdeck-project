@@ -4,7 +4,14 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+       "plusJakarta": ["Plus Jakarta Sans", "sans-serif"]
+      },
+      backgroundImage:{
+        'bgImage':"url('/src/assets/customersImg/customerHerobg.svg')"
+      } 
+    }
   },
   plugins: [],
 }
