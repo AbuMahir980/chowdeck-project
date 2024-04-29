@@ -2,8 +2,10 @@ import React from 'react'
 import Button from './shared/Button'
 import playStoreImg from "../../assets/playStore.svg"
 import appStore from "../../assets/customersImg/appStore.svg"
+import Appads from './Appads'
 const Customer = () => {
   return (
+    <div className="">
     <div className=' bg-bgImage w-[100%] h-[100vh] font-plusJakarta'>
       <div className="pt-12">
         <div className="text-[112px] font-[700] text-center flex justify-center items-center">
@@ -14,7 +16,9 @@ const Customer = () => {
         <div className="bg-[#0c513f] text-white rounded-[7px]"><Button image={appStore}  text="Download on App Store"/></div>
         </div>
         </div>
-        
+    </div>
+
+    <Appads/>
     </div>
   )
 }
