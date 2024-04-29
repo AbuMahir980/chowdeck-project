@@ -7,8 +7,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Navbar from './shared/Navbar';
-import NavList from './shared/components/NavList';
-import LgMenuList from './shared/components/LgMenuList';
+import Vendors from './pages/vendors/Vendors';
 // import reportWebVitals from './reportWebVitals';
 
 
@@ -22,8 +21,8 @@ const router = createBrowserRouter([
     element: <Navbar />
   },
   {
-    path: '/lgmenulist',
-    element: <LgMenuList />
+    path: '/vendors',
+    element: <Vendors />
   },
 ]);
 const root = ReactDOM.createRoot(document.getElementById('root'));

@@ -4,7 +4,7 @@ import { useState } from 'react';
 import NavList from './components/NavList';
 import BrandLogo from './components/BrandLogo';
 import LgMenuList from './components/LgMenuList';
-import Client from './components/Clients';
+// import Client from './components/Clients';
 
 const Navbar = () => {
 
@@ -16,7 +16,7 @@ const Navbar = () => {
 
     return(
         
-        <nav className='flex items-center justify-center h-20'>
+        <nav className='flex items-center justify-center h-20 bg-transparent bg-opacity-35 w-full fixed top-0 z-10 mt-6'>
             <div className='container mx-auto px-4 flex justify-between items-center w-full h-full'>
                 <BrandLogo/>
 
@@ -37,9 +37,8 @@ const Navbar = () => {
                 </div>
             </div>
             
-        </nav>
-        
-    )
+        </nav>    
+    );
 }
 
 export default Navbar
