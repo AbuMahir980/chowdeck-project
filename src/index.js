@@ -9,6 +9,7 @@ import {
 import Navbar from './shared/Navbar';
 import NavList from './shared/components/NavList';
 import Relay from './components/relayComponents/Relay';
+import LgMenuList from './shared/components/LgMenuList';
 // import reportWebVitals from './reportWebVitals';
 
 
@@ -24,7 +25,11 @@ const router = createBrowserRouter([
   {
     path: '/relay',
     element: <Relay />
-  }
+  },
+  {
+    path: '/lgmenulist',
+    element: <LgMenuList />
+  },
 ]);
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
