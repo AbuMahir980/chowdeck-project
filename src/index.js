@@ -8,11 +8,8 @@ import {
 } from "react-router-dom";
 import Navbar from './shared/Navbar';
 import NavList from './shared/components/NavList';
-<<<<<<< HEAD
 import Blog from './pages/blog/Blog';
-=======
 import LgMenuList from './shared/components/LgMenuList';
->>>>>>> 4b7dea708f31e3968bb081b643f62e3d60f83384
 // import reportWebVitals from './reportWebVitals';
  
 

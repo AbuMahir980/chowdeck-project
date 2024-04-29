@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <div className="flex gap-12 h-[25rem]">
       <div className="flex items-end w-[50%]">
-        <div className="text-white" ><h3 className="text-7xl">Blog & Stories</h3><p>The good stuff. Follow our social media for the latest updates, features and even sneak peeks 👀</p>
+        <div className="text-white" ><h1 className="text-5xl">Blog & Stories</h1><p>The good stuff. Follow our social media for the latest updates, features and even sneak peeks 👀</p>
         </div>
         </div>
       <div className="flex w-[50%]  ">

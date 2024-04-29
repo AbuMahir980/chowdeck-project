@@ -2,15 +2,15 @@ import chow from "../assets/circle.svg";
 import fryday from "../assets/company.svg";
 import relay from "../assets/exit.svg";
 import star from "../assets/logo.svg";
-import rl from "../assets/Relay_T.png";
-import campus from "../assets/CAP.png";
-import rite from "../assets/rite.png";
-import vend from "../assets/vendor.png";
-import cities from "../assets/cities.png";
-import shaare from "../assets/shaare.png";
-import iwd from "../assets/IWD.png";
-import sweet from "../assets/sweet.png"
-import fy from "../assets/fryday.jpg"
+import rl from "../assets/my_assets/Relay_T.png";
+import campus from "../assets/my_assets/CAP.png";
+import rite from "../assets/my_assets/rite.png";
+import vend from "../assets/my_assets/vendor.png";
+import cities from "../assets/my_assets/cities.png";
+import shaare from "../assets/my_assets/shaare.png";
+import iwd from "../assets/my_assets/IWD.png";
+import sweet from "../assets/my_assets/sweet.png"
+import fy from "../assets/my_assets/fryday.jpg"
 export const pressDetails = [
   {
     content: "Our 11 favorite companies from YC ‘s S22 Demo Day: Part 1",
