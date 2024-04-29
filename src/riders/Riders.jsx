@@ -32,9 +32,9 @@ const Riders = () => {
             <div>
                             <Info/>
                         </div>
-                        <div>
+                        {/* <div>
                             <Cards/>
-                        </div>
+                        </div> */}
             
         </div>
     )

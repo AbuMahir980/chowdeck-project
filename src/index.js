@@ -10,6 +10,7 @@ import {
 import Navbar from './shared/Navbar';
 import NavList from './shared/components/NavList';
 import LgMenuList from './shared/components/LgMenuList';
+import Riders from './riders/Riders';
 // import reportWebVitals from './reportWebVitals';
 
 
