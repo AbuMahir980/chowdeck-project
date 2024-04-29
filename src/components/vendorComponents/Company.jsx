@@ -13,7 +13,7 @@ const Company = () => {
         <div className="mt-24">
           <div className="flex items-end -m-0.5">
             <img src={hoverItems} className="ml-10 w-[40px] md:w-[130px]" />
-            <img src={hoverItems2} className="w-[200px] md:w-[700px] ml-auto" />
+            <img src={hoverItems2} className="wpx] md:w-[700px] ml-auto" />
           </div>
           <div className="grid-rows-4"></div>
         </div>
