@@ -1,3 +1,5 @@
+
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -5,13 +7,14 @@ module.exports = {
   ],
   theme: {
     extend: {
-      fontFamily: {
+          fontFamily: {
        "plusJakarta": ["Plus Jakarta Sans", "sans-serif"]
       },
       backgroundImage:{
-        'bgImage':"url('/src/assets/customersImg/customerHerobg.svg')"
+       'bgImage':"url('/src/assets/customersImg/customerHerobg.svg')",
+        'hero': "url('/src/assets/vendors/hero.svg')"
       } 
-    }
+    },
   },
   plugins: [],
 }

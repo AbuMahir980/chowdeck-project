@@ -1,35 +1,39 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './styles/index.css';
-
 import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
 import Navbar from './shared/Navbar';
-import NavList from './shared/components/NavList';
 import Customer from './pages/customersPage/Customer';
+import Relay from './components/relayComponents/Relay';
+import Riders from './riders/Riders';
+import Vendors from './pages/vendors/Vendors';
 // import reportWebVitals from './reportWebVitals';
 
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <div className='bg-slate-200 h-screen flex justify-center items-center'><h1 className=' flex justify-center items-center bg-white p-5 rounded-lg font-bold drop-shadow-lg text-bold text-center text-blue-700'>Hi Guys! 👋<br /> Welcome to the Chowdeck FullStack Project clone onboarding 🎉. <br /> Please kindly go through the README.md file - not the readme.md.txt file - for necessary instructions 🤭. <br /> Happy coding guys! 🚀</h1></div>,
+    element: <Customer />
   },
   {
     path: '/navbar',
     // element: <Navbar />
   },
   {
-    path: '/navlist',
-    element: <NavList />
+    path: '/vendors',
+    element: <Vendors />
   },
   {
-    path: '/customer',
-    element: <Customer />
+   path: '/relay',
+    element: <Relay />
   },
-  
+  {
+    path: '/riders',
+    element: <Riders />
+  }
 ]);
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
