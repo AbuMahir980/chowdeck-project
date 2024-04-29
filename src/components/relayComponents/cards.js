@@ -1,13 +1,13 @@
-import one from '../../assets/one.png'
-import two from '../../assets/two.svg'
-import three from '../../assets/three.svg'
-import four from '../../assets/four.svg'
-import five from '../../assets/five.svg'
-import six from '../../assets/six.svg'
-import seven from '../../assets/seven.png'
-import eight from '../../assets/eight.png'
+import one from '../../components/relayComponents/relayAssets/one.png'
+import two from '../../components/relayComponents/relayAssets/two.svg'
+import three from '../../components/relayComponents/relayAssets/three.svg'
+import four from '../../components/relayComponents/relayAssets/four.svg'
+import five from '../../components/relayComponents/relayAssets/five.svg'
+import six from '../../components/relayComponents/relayAssets/six.svg'
+import seven from '../../components/relayComponents/relayAssets/seven.png'
+import eight from '../../components/relayComponents/relayAssets/eight.png'
 
- export const card = [
+ export const cards = [
     {
     id:1,
     image: one,

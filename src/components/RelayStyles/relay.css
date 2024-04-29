@@ -1,5 +1,5 @@
 .background_container {
-    background-image: url('../../assets/relaybackgrooundone.svg');
+    background-image: url('../../components/relayComponents/relayAssets/relaybackgrooundone.svg');
     background-size: cover;
     background-color: rgb(255, 179, 206);
 }

@@ -1,10 +1,11 @@
 import React from 'react'
 import '../RelayStyles/relay.css'
 import Button from '../relayShared/button/Button'
-import googlePlayStore from '../../assets/googlePlayStore.svg'
-import appleStore from '../../assets/appleStore.svg'
-import boxOne from '../../assets/boxOne.svg'
-import heroThunder from '../../assets/heroThunder.svg'
+import googlePlayStore from '../../components/relayComponents/relayAssets/googlePlayStore.svg'
+import appleStore from '../../components/relayComponents/relayAssets/appleStore.svg'
+import boxOne from '../../components/relayComponents/relayAssets/boxOne.svg'
+import heroThunder from '../../components/relayComponents/relayAssets/heroThunder.svg'
+// import {cards} from '../../components/relayComponents/cards'
 
 const Relay = () => {
   
@@ -36,22 +37,27 @@ const Relay = () => {
 
 <h3 className='font-sans font-medium pl-5 mt-20 md:mt-8 lg:mt-28 text-2xl md:text-[64px] md:font-bold'>How Relay Works</h3>
 <div className='flex flex-row mt-20 space-x-10 items-center'>
-  <div className='w-[15%] bg-[pink] h-[30vh]'>
-    <h2>first card</h2>
-  </div>
-  <div className='flex flex-row w-[70%] bg-[blue] h-[60vh]'>
-    <div className='w-[50%]'>
-    <h2>second card</h2>
+    {/* {cards.map((card)=>(       */}
+    <>
+      
+      <div  className='w-[15%] bg-[pink] h-[30vh]'>
+      <h2>first card</h2>
     </div>
-    <div className='w-[50%] bg-[red] '>
-    <h2>extra</h2>
-    </div>
+    <div className='flex flex-row w-[70%] bg-[blue] h-[60vh]'>
+      <div className='w-[50%]'>
+      <h2>second card</h2>
+      </div>
+      <div className='w-[50%] bg-[red] '>
+      <h2>extra</h2>
+      </div>
+      
     
-   
-  </div>
-  <div className='w-[15%] bg-[green] h-[30vh]'>
-    <h2>third card</h2>
-  </div>
+    </div>
+    <div className='w-[15%] bg-[green] h-[30vh]'>
+      <h2>third card</h2>
+    </div>
+      </>
+
 </div>
   
 
