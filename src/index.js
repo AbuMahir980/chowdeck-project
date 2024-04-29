@@ -7,6 +7,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Navbar from './shared/Navbar';
+import Contact from './pages/contact/Contact';
 import Vendors from './pages/vendors/Vendors';
 // import reportWebVitals from './reportWebVitals';
 
@@ -24,7 +25,12 @@ const router = createBrowserRouter([
     path: '/vendors',
     element: <Vendors />
   },
+  {
+    path: '/contact',
+    element: <Contact />
+  },
 ]);
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
