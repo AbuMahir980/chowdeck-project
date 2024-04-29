@@ -10,6 +10,7 @@ import Navbar from './shared/Navbar';
 import Contact from './pages/contact/Contact';
 import Riders from './riders/Riders';
 import Vendors from './pages/vendors/Vendors';
+import FAQS from './pages/faq/Faq'
 
 // import reportWebVitals from './reportWebVitals';
 
@@ -34,7 +35,11 @@ const router = createBrowserRouter([
   {
     path: '/riders',
     element: <Riders />
-  }
+  },
+  {
+    path: '/faqs',
+    element: <FAQS />
+  },
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

@@ -1,4 +1,4 @@
-import hero from '../../assets/vendors/hero.svg';
+// import hero from '../../assets/vendors/hero.svg';
 import Buttons from '../../components/vendorComponents/Buttons';
 import Navbar from '../../shared/Navbar';
 import playStore from '../../assets/vendors/googlePlay.svg';
