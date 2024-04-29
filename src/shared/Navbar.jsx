@@ -4,7 +4,6 @@ import { useState } from 'react';
 import NavList from './components/NavList';
 import BrandLogo from './components/BrandLogo';
 import LgMenuList from './components/LgMenuList';
-import Client from './components/Clients';
 
 const Navbar = () => {
 
