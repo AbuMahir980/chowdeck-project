@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 import Navbar from './shared/Navbar';
 import NavList from './shared/components/NavList';
+import Relay from './components/relayComponents/Relay';
 // import reportWebVitals from './reportWebVitals';
 
 
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
     path: '/navbar',
     element: <Navbar />
   },
+  {
+    path: '/relay',
+    element: <Relay />
+  }
 ]);
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

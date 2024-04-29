@@ -1,0 +1,12 @@
+.background_container {
+    background-image: url('../../assets/relaybackgrooundone.svg');
+    background-size: cover;
+    background-color: rgb(255, 179, 206);
+}
+
+/* .background_two {
+    background-image: url('../../assets/backgroundTwo.svg');
+    background-size: cover;
+    background-color: rgb(255, 179, 206);
+    background-color: '#ffb3ce';
+} */
