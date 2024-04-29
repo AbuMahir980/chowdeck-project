@@ -8,7 +8,9 @@ import {
 } from "react-router-dom";
 import Navbar from './shared/Navbar';
 import Contact from './pages/contact/Contact';
+import Riders from './riders/Riders';
 import Vendors from './pages/vendors/Vendors';
+
 // import reportWebVitals from './reportWebVitals';
 
 
@@ -29,6 +31,10 @@ const router = createBrowserRouter([
     path: '/contact',
     element: <Contact />
   },
+  {
+    path: '/riders',
+    element: <Riders />
+  }
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
