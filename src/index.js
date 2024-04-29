@@ -1,15 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './styles/index.css';
-
 import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
 import Navbar from './shared/Navbar';
-import NavList from './shared/components/NavList';
 import Relay from './components/relayComponents/Relay';
-import LgMenuList from './shared/components/LgMenuList';
+import Riders from './riders/Riders';
+import Vendors from './pages/vendors/Vendors';
 // import reportWebVitals from './reportWebVitals';
 
 
@@ -23,13 +22,17 @@ const router = createBrowserRouter([
     element: <Navbar />
   },
   {
-    path: '/relay',
+    path: '/vendors',
+    element: <Vendors />
+  },
+  {
+   path: '/relay',
     element: <Relay />
   },
   {
-    path: '/lgmenulist',
-    element: <LgMenuList />
-  },
+    path: '/riders',
+    element: <Riders />
+  }
 ]);
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
