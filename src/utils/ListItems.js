@@ -16,6 +16,13 @@ import blogSvg2 from '../assets/hoverItems/blog-hover-2.svg';
 import blogSvg3 from '../assets/hoverItems/blog-hover-3.svg';
 import blogSvg4 from '../assets/hoverItems/blog-hover-4.svg';
 import contactSvg from '../assets/contact.svg';
+import location from '../assets/vendors/networks/location.svg';
+import halfCircle from '../assets/vendors/networks/halfCircle.svg';
+import star1 from '../assets/vendors/networks/star1.svg';
+import fwdArrowThin from '../assets/vendors/networks/fwdArrowThin.svg';
+import orderImg from '../assets/vendors/networks/orderImg.png';
+import deliveryImg from '../assets/vendors/networks/deliveryImg.png';
+import sceneImg from '../assets/vendors/networks/sceneImg.png';
 
 export const items = [
         { text: 'Customers', icon: parcel},
@@ -38,3 +45,29 @@ export const lgItems = [
     { text: 'Blog', background: [blogSvg1, blogSvg2, blogSvg3, blogSvg4] }, // Array for multiple backgrounds
     { text: 'Contact', background: contactSvg }
 ];
+
+export const networks = [
+    { 
+        netIcon:location, 
+        netHeading:"Order in 3 steps", 
+        netText: "Hungry ? Too tired to cook ? Having friends over or you just wan chop life ? Get started and allow us deliver happiness to your door step.", 
+        netActionTxt: "SEE MORE", 
+        netActionIcon: fwdArrowThin, 
+        netContImg: orderImg
+    },
+    { 
+        netIcon:halfCircle, 
+        netHeading:"Deliver happiness", 
+        netText: "Join our elite league of delivery riders delivering happiness to customers and earn to achieve your dreams while at it.", netActionTxt: "SEE MORE", 
+        netActionIcon: fwdArrowThin, 
+        netContImg: deliveryImg
+    },
+    { 
+        netIcon:star1, 
+        netHeading:"Behind the scenes", 
+        netText: "If you are passionate about helping us achieve our goal to deliver meals seamlessly, come join the team.", 
+        netActionTxt: "SEE MORE", 
+        netActionIcon: fwdArrowThin, 
+        netContImg: sceneImg
+    }
+]

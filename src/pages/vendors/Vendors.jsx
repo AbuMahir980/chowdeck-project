@@ -2,7 +2,9 @@
 import Buttons from '../../components/vendorComponents/Buttons';
 import Navbar from '../../shared/Navbar';
 import playStore from '../../assets/vendors/googlePlay.svg';
-import appStore from '../../assets/vendors/appStore.svg'
+import appStore from '../../assets/vendors/appStore.svg';
+import downArrow from '../../assets/vendors/networks/downArrow.svg'
+
 
 
 const Vendors = () => {
@@ -38,6 +40,13 @@ const Vendors = () => {
                     <Buttons img={playStore} bgColor="bg-[#0c513f]" text="Download on Google Play" width="w-72" height="h-16" textWeight="font-medium" textSize="text-base"/>
                     <Buttons img={appStore} bgColor="bg-[#0c513f]" text="Download on App Store" width="w-72" height="h-16" textWeight="font-medium" textSize="text-base"/>
                 </div>
+                <div className='mb-10'></div>
+                <div className='mb-10'></div>
+                <div className='mb-10'></div>
+            </div>
+            <div className='flex justify-center items-center container mx-auto px-4 gap-2'>
+                <h2 className='text-[#d1d5db] font-normal text-[32px] leading-[48px] md:text-[48px] md:leading-[48px] md:tracking-tighter lg:text-[64px] lg:leading-[80px]'>Join our growing network</h2>
+                <img src={downArrow} alt="" className='w-6 h-6 md:w-14 md:h-14 lg:w-16 lg:h-16' />
             </div>
         </div>
     ); 
