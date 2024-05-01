@@ -28,8 +28,8 @@ const Company = () => {
           </div>
         </div>
       </div>
-      <div className="px-11 pb-28">
-        <div className=" border-solid border-black rounded-lg bg-white">
+      <div className="px-11 pb-28 ">
+        <div className=" border-solid-9 outline border-black rounded-lg bg-white ">
           <div className=" border-black border-solid ">
             <p className="bg-[#0C513F] p-6 box-border flex font-semibold">
               <span src={chowFounder}></span>Founder's Story
