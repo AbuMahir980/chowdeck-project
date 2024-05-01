@@ -7,7 +7,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Navbar from './shared/Navbar';
-import NavList from './shared/components/NavList';
+// import NavList from './shared/components/NavList';
 import LgMenuList from './shared/components/LgMenuList';
 import Company from './components/vendorComponents/Company';
 // import reportWebVitals from './reportWebVitals';
