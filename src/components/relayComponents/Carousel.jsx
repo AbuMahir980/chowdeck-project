@@ -1,24 +1,24 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
 // src/ImageCarouselTwo.js
-import { useState, useEffect } from "react"
+import { useState, useEffect } from "react";
 
-const Carousel = ({ cards, interval,bg }) => {
-  const [currentIndex, setCurrentIndex] = useState(0)
-  const [currentIndexOne, setCurrentIndexOne] = useState(1)
-  const [currentIndexTwo, setCurrentIndexTwo] = useState(2)
+const Carousel = ({ cards, interval, bg }) => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [currentIndexOne, setCurrentIndexOne] = useState(1);
+  const [currentIndexTwo, setCurrentIndexTwo] = useState(2);
 
   useEffect(() => {
-    const imageCount = cards.length
+    const imageCount = cards.length;
 
     const timer = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % imageCount)
-      setCurrentIndexOne((prevIndex) => (prevIndex + 1) % imageCount)
-      setCurrentIndexTwo((prevIndex) => (prevIndex + 1) % imageCount)
-    }, interval)
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % imageCount);
+      setCurrentIndexOne((prevIndex) => (prevIndex + 1) % imageCount);
+      setCurrentIndexTwo((prevIndex) => (prevIndex + 1) % imageCount);
+    }, interval);
 
-    return () => clearInterval(timer)
-  }, [cards, interval])
+    return () => clearInterval(timer);
+  }, [cards, interval]);
 
   return (
     <div className="flex w-full items-center justify-between ">
@@ -28,9 +28,7 @@ const Carousel = ({ cards, interval,bg }) => {
         className=" w-[180px] h-[150px] "
       />
       <div className={`flex ${cards[currentIndex].bg} `}>
-        <div >
-          {cards[currentIndex].description}
-        </div>
+        <div>{cards[currentIndex].description}</div>
         <img
           src={cards[currentIndex].image}
           alt={`Image ${currentIndex + 1}`}
@@ -43,9 +41,7 @@ const Carousel = ({ cards, interval,bg }) => {
         className=" w-[180px] h-[150px] "
       />
     </div>
+  );
+};
 
-
-  )
-}
-
-export default Carousel
+export default Carousel;
