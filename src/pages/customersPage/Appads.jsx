@@ -1,21 +1,60 @@
-import React from 'react'
-import Button from './shared/Button'
-import Customerads from './appAdsComponents/Customerads'
+import React, { useState } from "react";
+import Button from "./shared/Button";
+import Customerads from "./appAdsComponents/Customerads";
+import VendorAds from "./appAdsComponents/VendorAds";
+import Riders from "./appAdsComponents/Riders";
 
 const Appads = () => {
-  return (
-    <div className=''>
-        <div className="mx-auto p-2 rounded-[7px] bg-[#FFF3CC] w-[25vw] flex space-x-8 justify-center items-center mt-7">
-          <div className="">
-        <p className="active:bg-[#FFC501] active:text-white active:px-[5px] font-[700] active:rounded-[5px]">Customer</p>
-       
-        </div>
-        <p className="">Vendors</p>
-        <p className="">Riders</p>
-        </div>
-        <Customerads/>
-    </div>
-  )
-}
+  const [next, setNext] = useState(0);
+  const [active, setActive] = useState(0);
 
-export default Appads
+  const handleTabSwitch = (index) => {
+    setActive(index);
+    setNext(index);
+  };
+
+  return (
+    <div className="">
+      <div className="mx-auto p-2 rounded-[9px] bg-[#FFF3CC] w-[20vw] flex space-x-8 justify-center items-center mt-7">
+        <p
+          className={`${
+            active === 0 && "bg-[#FFC501] text-white px-[5px]  rounded-[10px]"
+          } font-[700]`}
+          onClick={() => handleTabSwitch(0)}
+        >
+          Customer
+        </p>
+
+        <p
+          className={`${
+            active === 1 && "bg-[#FFC501] text-white px-[5px]  rounded-[10px]"
+          } font-[700]`}
+          onClick={() => handleTabSwitch(1)}
+        >
+          Vendors
+        </p>
+        <p
+          className={`${
+            active === 2 && "bg-[#FFC501] text-white px-[5px]  rounded-[10px]"
+          } font-[700]`}
+          onClick={() => handleTabSwitch(2)}
+        >
+          Riders
+        </p>
+      </div>
+      <div className="">
+        {next == 0 ? (
+          <Customerads />
+        ) : next == 1 ? (
+          <VendorAds />
+        ) : next == 2 ? (
+          <Riders />
+        ) : (
+          ""
+        )}
+      </div>
+    </div>
+  );
+};
+
+export default Appads;

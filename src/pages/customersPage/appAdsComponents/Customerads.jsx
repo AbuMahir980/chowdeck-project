@@ -13,9 +13,9 @@ const Customerads = () => {
         <div className="w-[45px] h-[45px] bg-[#0c513f] rounded-full flex items-center justify-center"><img src={playStoreImg} alt="" className='w-5'/></div>
         <div className="w-[45px] h-[45px] bg-[#0c513f] rounded-full flex items-center justify-center"><img src={appStore} alt=""  className='w-7'/></div>
        </div>
-       <div className="relative">
-        <img src={pasteryTop} className='w-[7rem] relative top-[-15] bottom-7 z-10' alt=""/>
-       <img src={customerAppImg} alt="" className='w-[22rem]'/> 
+       <div className="relative mt-36">
+        <img src={pasteryTop} className='w-[7rem] absolute top-[-25px] right-[-10px] z-50' alt=""/>
+       <img src={customerAppImg} alt="" className='w-[22rem] z-10 '/> 
        </div>
     </div>  
   )
