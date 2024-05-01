@@ -21,7 +21,7 @@ const Company = () => {
         <div className="mx-9 font-bold mt-10 ">
           <h1 className="mx-11 font-bold text-9xl">Delivery Happiness</h1>
         </div>
-        <div className="mt-36">
+        <div className="mt-72">
           <div className="flex mx-4">
             <img src={hoverItems} className="ml-16  md:w-[130px]" />
             <img src={hoverItems2} className="md:w-[700px] ml-96" />
