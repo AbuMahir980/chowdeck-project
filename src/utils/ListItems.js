@@ -20,9 +20,9 @@ import location from '../assets/vendors/networks/location.svg';
 import halfCircle from '../assets/vendors/networks/halfCircle.svg';
 import star1 from '../assets/vendors/networks/star1.svg';
 import fwdArrowThin from '../assets/vendors/networks/fwdArrowThin.svg';
-import orderImg from '../assets/vendors/networks/orderImg.png';
-import deliveryImg from '../assets/vendors/networks/deliveryImg.png';
-import sceneImg from '../assets/vendors/networks/sceneImg.png';
+import order from '../assets/vendors/networks/order.webp';
+import deliver from '../assets/vendors/networks/deliver.webp';
+import scenes from '../assets/vendors/networks/scenes.webp';
 
 export const items = [
         { text: 'Customers', icon: parcel},
@@ -48,26 +48,27 @@ export const lgItems = [
 
 export const networks = [
     { 
-        netIcon:location, 
-        netHeading:"Order in 3 steps", 
-        netText: "Hungry ? Too tired to cook ? Having friends over or you just wan chop life ? Get started and allow us deliver happiness to your door step.", 
-        netActionTxt: "SEE MORE", 
-        netActionIcon: fwdArrowThin, 
-        netContImg: orderImg
+        icon:location, 
+        heading:"Order in 3 steps", 
+        text: "Hungry ? Too tired to cook ? Having friends over or you just wan chop life ? Get started and allow us deliver happiness to your door step.", 
+        actionTxt: "SEE MORE", 
+        actionIcon: fwdArrowThin, 
+        contImg: order
     },
     { 
-        netIcon:halfCircle, 
-        netHeading:"Deliver happiness", 
-        netText: "Join our elite league of delivery riders delivering happiness to customers and earn to achieve your dreams while at it.", netActionTxt: "SEE MORE", 
-        netActionIcon: fwdArrowThin, 
-        netContImg: deliveryImg
+        icon:halfCircle, 
+        heading:"Deliver happiness", 
+        text: "Join our elite league of delivery riders delivering happiness to customers and earn to achieve your dreams while at it.", 
+        actionTxt: "SEE MORE", 
+        actionIcon: fwdArrowThin, 
+        contImg: deliver
     },
     { 
-        netIcon:star1, 
-        netHeading:"Behind the scenes", 
-        netText: "If you are passionate about helping us achieve our goal to deliver meals seamlessly, come join the team.", 
-        netActionTxt: "SEE MORE", 
-        netActionIcon: fwdArrowThin, 
-        netContImg: sceneImg
+        icon:star1, 
+        heading:"Behind the scenes", 
+        text: "If you are passionate about helping us achieve our goal to deliver meals seamlessly, come join the team.", 
+        actionTxt: "SEE MORE", 
+        actionIcon: fwdArrowThin, 
+        contImg: scenes
     }
 ]
