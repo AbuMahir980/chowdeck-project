@@ -4,7 +4,8 @@ import Button from './shared/button/Button'
 import applelogo from '../assets/far assets1/apple-Logo.png'
 import playstore from '../assets/far assets1/playstore-logo.avif'
 import Info from './Info'
-import Cards from './shared/cards'
+import Cards from '../riders/shared/cards'
+
 
 
 
@@ -32,9 +33,9 @@ const Riders = () => {
             <div>
                             <Info/>
                         </div>
-                        {/* <div>
+                        <div>
                             <Cards/>
-                        </div> */}
+                        </div>
             
         </div>
     )

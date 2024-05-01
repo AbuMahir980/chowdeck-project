@@ -1,24 +1,34 @@
-import React from 'react'
 import bikeCard from '../assets/far assets1/unlocknewlevelsofgrowth.png'
 import metricesLogo from '../assets/far assets1/metrices.png'
+import unlockLogo from '../assets/far assets1/unlocknewlevelsofgrowth.png'
+// import metrisLogo from '../assets/far assets1/metrices.png'
+import InfoCard from './infoCard'
+
+const images = [
+  {
+    image: unlockLogo,
+    text: "Unlock new levels of growth."
+  },
+  {
+    image: metricesLogo,
+    text: "Track your metrics & bonuses earned."
+  },
+  {
+    image: metricesLogo,
+    text: "Withdraw straight to your account."
+  },
+]
 
 const Info = () => {
+
+
+
   return (
     <div className='mx-7 bg-white border-black border-4 rounded-[7px] p-7 z-10 relative top-[-50px]'>
-        <div className="flex">
-            {/* <h1 className="font-black text-[50px] w-[900px] leading-[60px]">Unlock new levels of growth.</h1>
-            <div className=""> <img src={bikeCard} alt="" /> </div> */}
-            <div>
-            <h1 className="font-black text-[40px] w-[700px] leading-[60px]">Track your metrics & bonuses earned.</h1>
-                        <p className="text-[20px] w-[350px] m">Monitor your growth and earn huge bonuses as you go.</p>
-                          <div className="flex ">
-                            <div className='h-[20px] w-[20px] bg-green-700'></div>
-                            <div className='h-[20px] w-[20px] bg-green-700'></div>
-                          </div>
-                        </div>
-            <div className=""> <img src={metricesLogo} alt="" /></div>
-        </div>
-       
+    
+    
+      <InfoCard images={images} interval={3000} />
+
     </div>
   )
 }
