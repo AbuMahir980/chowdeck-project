@@ -11,7 +11,10 @@ const Info = () => {
             <div>
             <h1 className="font-black text-[40px] w-[700px] leading-[60px]">Track your metrics & bonuses earned.</h1>
                         <p className="text-[20px] w-[350px] m">Monitor your growth and earn huge bonuses as you go.</p>
-                          <div className="rounded-full h-1"></div>
+                          <div className="flex ">
+                            <div className='h-[20px] w-[20px] bg-green-700'></div>
+                            <div className='h-[20px] w-[20px] bg-green-700'></div>
+                          </div>
                         </div>
             <div className=""> <img src={metricesLogo} alt="" /></div>
         </div>
