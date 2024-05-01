@@ -7,6 +7,9 @@ import boxOne from '../../components/relayComponents/relayAssets/boxOne.svg'
 import heroThunder from '../../components/relayComponents/relayAssets/heroThunder.svg'
 import Carousel from './Carousel'
 import { cards } from './cards'
+import cardThree from '../../components/relayComponents/relayAssets/cardThree.svg'
+import cardTwo from '../../components/relayComponents/relayAssets/cardTwo.svg'
+import cardOne from '../../components/relayComponents/relayAssets/cardOne.svg'
 const Relay = () => {
 
 
@@ -55,9 +58,85 @@ const Relay = () => {
       <h2>third card</h2>
     </div>
 </div> */}
-<div className="mt-5 ">
+<div className="mt-24 ">
 <Carousel cards={cards} interval={3000} />
 </div>
+
+{/* <div style={{ backgroundColor: 'rgb(153, 0, 56)' }} className='mt-20 relative z-30 flex flex-col justify-center items-center lg:mb-[50px] min-h-[200px] lg:min-h-[500px]'>
+<h3 className=' text-white text-center text-5xl font-bold leading-[48px] not-italic pt-24 mb-20'>
+  <span className='text-[pink]'>You need it?</span> <br />
+  We'll bring it!
+</h3>
+<div style={{ translate: 'none', rotate: 'none', scale: 'none', transform: 'translate(0px, 0px)'}}>
+  <div style={{boxSizing:'border-box', display:'block', overflow:'hidden', width:'initial', height:'initial', background:'none', opacity:'1',border:'0',padding:'0',margin:'0', position:'absolute', inset:'0'}}>
+    <img src={cardThree} alt="" className='absolute transform rotate-3 z-3'/>
+  </div>
+</div>
+<div >
+  <div>
+    <img src={cardTwo} alt="" className='absolute transform z-2'/>
+  </div>
+</div>
+<div>
+  <div>
+    <img src={cardOne} alt="" className='absolute  transform -rotate-3 z-1'/>
+  </div>
+</div>
+</div> */}
+
+
+{/* <div style={{ backgroundColor: 'rgb(153, 0, 56)' }}>
+<div  className='mt-20'>
+<h3 className=' text-white text-center text-5xl font-bold leading-[48px] not-italic pt-24 mb-20'>
+  <span className='text-[pink]'>You need it?</span> <br />
+  We'll bring it!
+</h3>
+</div>
+
+<div>
+  <div>
+    <img src={cardThree} alt="" className='absolute transform rotate-3 z-3'/>
+  </div>
+</div>
+<div >
+  <div>
+    <img src={cardTwo} alt="" className='absolute transform z-2'/>
+  </div>
+</div>
+<div>
+  <div>
+    <img src={cardOne} alt="" className='absolute  transform -rotate-3 z-1'/>
+  </div>
+</div>
+</div> */}
+
+<div style={{ backgroundColor: 'rgb(153, 0, 56)' }} className='h-[30rem] lg:h-[60rem]'>
+  {/* <h1>hjbbabc</h1> */}
+  <div  className='mt-20'>
+<h3 className=' text-white text-center text-5xl font-bold leading-[48px] not-italic pt-24 mb-20'>
+  <span className='text-[pink]'>You need it?</span> <br />
+  We'll bring it!
+</h3>
+</div>
+  <div className='flex justify-center relative'>
+    <img src={cardOne} alt="" className='absolute transform rotate-3 z-1 lg:w-[631.66px] lg:h-[500px]' />
+    <img src={cardTwo} alt="" className='absolute transform z-2 lg:w-[631.66px] lg:h-[500px]'/>
+    <img src={cardThree} alt="" className='absolute transform -rotate-3 z-3 lg:w-[631.66px] lg:h-[500px]' />
+  </div>
+</div>
+
+<div className='flex justify-center'>
+<p><a href="#"><img src={googlePlayStore} alt="" className='w-[15px]' /></a></p>
+
+<p><svg stroke="currentColor" fill="black" stroke-width="0" width='15px' viewBox="0 0 1024 1024" class="mr-1.5" xmlns="http://www.w3.org/2000/svg"><path d="M747.4 535.7c-.4-68.2 30.5-119.6 92.9-157.5-34.9-50-87.7-77.5-157.3-82.8-65.9-5.2-138 38.4-164.4 38.4-27.9 0-91.7-36.6-141.9-36.6C273.1 298.8 163 379.8 163 544.6c0 48.7 8.9 99 26.7 150.8 23.8 68.2 109.6 235.3 199.1 232.6 46.8-1.1 79.9-33.2 140.8-33.2 59.1 0 89.7 33.2 141.9 33.2 90.3-1.3 167.9-153.2 190.5-221.6-121.1-57.1-114.6-167.2-114.6-170.7zm-105.1-305c50.7-60.2 46.1-115 44.6-134.7-44.8 2.6-96.6 30.5-126.1 64.8-32.5 36.8-51.6 82.3-47.5 133.6 48.4 3.7 92.6-21.2 129-63.7z"></path></svg>
+<a href="#"><img src='' alt=""  /></a></p>
+</div>
+
+
+
+
+
+
 
 </>
 

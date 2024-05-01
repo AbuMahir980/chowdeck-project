@@ -11,7 +11,7 @@ import eight from '../../components/relayComponents/relayAssets/eight.png'
     {
     id:1,
     image: one,
-    description: "Download the chowdeck app",
+    description: "Download the chowdeck app and tap",
     bg: 'bg-[#FFF4F8]'
 },
 {
@@ -23,37 +23,37 @@ import eight from '../../components/relayComponents/relayAssets/eight.png'
 {
     id:3,
     image: three,
-    description: "Download the chowdeck app",
+    description: "Prepare your package for pickup",
     bg: 'bg-[#FFF4F8]'
 },
 {
     id:4,
     image: four,
-    description: "Download the chowdeck app",
+    description: "Hands your package to the rider",
     bg: 'bg-[#990139]'
 },
 {
     id:5,
     image: five,
-    description: "Download the chowdeck app",
+    description: "Rider picks up your package",
     bg: 'bg-[#FFF4F8]'
 },
 {
     id:6,
     image: six,
-    description: "Download the chowdeck app",
+    description: "Rider heads to the drop-off location",
     bg: 'bg-[#990139]'
 },
 {
     id:7,
     image: seven,
-    description: "Download the chowdeck app",
+    description: "Rider delivers your package",
     bg: 'bg-[#FFF4F8]'
 },
 {
     id:8,
     image: eight,
-    description: "Download the chowdeck app",
+    description: "Rate your rider and the delivery experience",
     bg: 'bg-[#990139]'
 },
 ]
