@@ -1,6 +1,6 @@
 const LogInCard = () => {
     return(
-        <>
+        <div className="flex justify-center bg-black bg-opacity-60 w-full min-h-screen fixed top-0">
             <div className='max-h-[95vh] w-[90vw] bg-white rounded-3xl overflow-y-auto text-center p-5 mt-5 sm:pt-16 sm:px-20 lg:w-[55vw] xl:w-[40vw]'>
                 {/* <img src={exit} alt="" className=''/> */}
                 <h1 className='font-medium text-2xl mb-2'>Sign In</h1>
@@ -16,7 +16,7 @@ const LogInCard = () => {
                 </div>
                 <p className='text-base font-normal text-[#999999] sm:font-medium'>New to Chowdeck? <span className='text-[#0c513f]'>Sign Up</span></p>
             </div>
-        </>
+        </div>
     )
 }
 
