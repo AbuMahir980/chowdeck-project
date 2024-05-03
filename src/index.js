@@ -10,14 +10,19 @@ import Customer from './pages/customersPage/Customer';
 import Relay from './components/relayComponents/Relay';
 import Riders from './riders/Riders';
 import Vendors from './pages/vendors/Vendors';
-import FAQS from './pages/faq/Faq'
+import FAQS from './pages/faq/Faq';
 import Blog from './pages/blog/Blog';
+import Store from './pages/store/Store'
 // import reportWebVitals from './reportWebVitals';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Customer />
+  },
+  {
+    path: '/store',
+    element: <Store />
   },
   {
     path: '/vendors',
@@ -38,7 +43,6 @@ const router = createBrowserRouter([
   {
     path: '/faqs',
     element: <FAQS />
-
   },
   {
     path:'/blog' ,
