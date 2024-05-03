@@ -1,7 +1,7 @@
 import account from '../../assets/store/account.svg';
 import email from '../../assets/store/email.svg';
 // import exit from '../../assets/exit.svg'
-const AccountCard = () => {
+const SignUpCard = () => {
     return(
         <>
             <div className='max-h-[95vh] w-[90vw] bg-white rounded-3xl overflow-y-auto text-center p-5 mt-5 sm:pt-16 sm:px-20 lg:w-[55vw] xl:w-[40vw]'>
@@ -53,4 +53,4 @@ const AccountCard = () => {
     );
 }
 
-export default AccountCard
+export default SignUpCard

@@ -1,9 +1,9 @@
-import AccountCard from "../../components/storeComponents/AccountCard"
+import SignUpCard from "../../components/storeComponents/SignUpCard"
 
 const Store = () => {
     return(
         <div className="bg-black flex justify-center items-center">
-            <AccountCard/>
+            <SignUpCard/>
         </div>
     )
 }
