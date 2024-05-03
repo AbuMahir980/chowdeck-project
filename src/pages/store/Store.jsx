@@ -1,4 +1,4 @@
-import SignUpCard from "../../components/storeComponents/SignUpCard"
+// import SignUpCard from "../../components/storeComponents/SignUpCard"
 import LogInCard from "../../components/storeComponents/LogInCard"
 
 const Store = () => {
