@@ -6,7 +6,6 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import Navbar from './shared/Navbar';
 import Vendors from './pages/vendors/Vendors';
 import Store from './pages/store/Store'
 // import reportWebVitals from './reportWebVitals';
