@@ -27,7 +27,7 @@
     top: 450%;
     left: 0;
     transform: translateY(-50%); 
-    width: 50%; /* Adjust the width as needed */
+    width: 50%; 
     height: 100vh;
     background-image: url('../../components/relayComponents/relayAssets/batonReceiver.svg');
     background-size: cover;
@@ -42,7 +42,7 @@
     top: 450%;
     right: 0;
     transform: translateY(-50%); 
-    width: 50%; /* Adjust the width as needed */
+    width: 50%;
     height: 100vh;
     background-image: url('../../components/relayComponents/relayAssets/batonGiver.svg');
     background-size: cover;
@@ -54,7 +54,7 @@
 @media (max-width: 767px) {
     .BatonGiver-et-BatonReciever::before,
     .BatonGiver-et-BatonReciever::after {
-        top: 10%; /* Adjust the top position for smaller screens */
+        top: 10%; 
         transform: translateY(-50%);
     }
 }
@@ -62,7 +62,7 @@
 @media (max-width: 414px) {
     .BatonGiver-et-BatonReciever::before,
     .BatonGiver-et-BatonReciever::after {
-        top: 220%; /* Adjust the top position for smaller screens */
+        top: 220%; 
         transform: translateY(-50%);
     }
 }
