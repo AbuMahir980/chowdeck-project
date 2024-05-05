@@ -10,6 +10,8 @@ import Navbar from './shared/Navbar';
 import NavList from './shared/components/NavList';
 import LgMenuList from './shared/components/LgMenuList';
 import FAQS from './pages/faq/Faq'
+import Fotter from './pages/fotter/Fotter';
+import Checkout from './pages/checkout/Checkout';
 // import reportWebVitals from './reportWebVitals';
 
 
@@ -29,6 +31,14 @@ const router = createBrowserRouter([
   {
     path: '/faqs',
     element: <FAQS />
+  },
+  {
+    path: '/fotter',
+    element: <Fotter />
+  },
+  {
+    path: '/Checkout',
+    element: <Checkout />
   },
 ]);
 const root = ReactDOM.createRoot(document.getElementById('root'));
