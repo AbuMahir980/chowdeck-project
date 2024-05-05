@@ -6,6 +6,7 @@ import appStore from '../../assets/vendors/appStore.svg';
 import downArrow from '../../assets/vendors/networks/downArrow.svg';
 import Card from '../../components/vendorComponents/Card';
 import { networks } from '../../utils/ListItems';
+import Community from '../../components/vendorComponents/Community';
 
 
 
@@ -57,7 +58,9 @@ const Vendors = () => {
                         networks.map((network, i) =>(<Card key={i} {...network}/>))
                     }
                 </div>
-                
+            </div>
+            <div className='w-full flex justify-center items-end h-60 mt-8'>
+                <Community />
             </div>
         </div>
     ); 
