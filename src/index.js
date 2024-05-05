@@ -9,6 +9,8 @@ import Navbar from './shared/Navbar';
 import Relay from './components/relayComponents/Relay';
 import Riders from './riders/Riders';
 import Vendors from './pages/vendors/Vendors';
+import Store from './components/store/Store';
+import Singlecard from './components/store/Singlecard'
 // import reportWebVitals from './reportWebVitals';
 
 
@@ -32,7 +34,17 @@ const router = createBrowserRouter([
   {
     path: '/riders',
     element: <Riders />
+  },
+  {
+    path: '/store',
+    element: <Store />
+  },
+  {
+    // path: '/singlecard/:id',
+    path: '/singlecard/',
+    element: <Singlecard />
   }
+  
 ]);
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

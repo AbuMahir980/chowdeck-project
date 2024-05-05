@@ -10,6 +10,19 @@ import { cards } from './cards'
 import cardThree from '../../components/relayComponents/relayAssets/cardThree.svg'
 import cardTwo from '../../components/relayComponents/relayAssets/cardTwo.svg'
 import cardOne from '../../components/relayComponents/relayAssets/cardOne.svg'
+// import batonReceiver from '../../components/relayComponents/relayAssets/batonReceiver.svg'
+// import batonGiver from '../../components/relayComponents/relayAssets/batonGiver.svg'
+import boxCarrier from '../../components/relayComponents/relayAssets/boxCarrier.svg'
+import manPackage from '../../components/relayComponents/relayAssets/manPackage.svg'
+import starLike from '../../components/relayComponents/relayAssets/starLike.svg'
+import AutoPlay from './slider/AutoPlay'
+import pearl from '../../components/relayComponents/relayAssets/pearl.svg'
+import halfMoon from '../../components/relayComponents/relayAssets/halfMoon.svg'
+import star from '../../components/relayComponents/relayAssets/star.svg'
+
+
+
+
 const Relay = () => {
 
 
@@ -111,7 +124,6 @@ const Relay = () => {
 </div> */}
 
 <div style={{ backgroundColor: 'rgb(153, 0, 56)' }} className='h-[30rem] lg:h-[60rem]'>
-  {/* <h1>hjbbabc</h1> */}
   <div  className='mt-20'>
 <h3 className=' text-white text-center text-5xl font-bold leading-[48px] not-italic pt-24 mb-20'>
   <span className='text-[pink]'>You need it?</span> <br />
@@ -125,12 +137,118 @@ const Relay = () => {
   </div>
 </div>
 
-<div className='flex justify-center'>
-<p><a href="#"><img src={googlePlayStore} alt="" className='w-[15px]' /></a></p>
+<div className='BatonGiver-et-BatonReciever flex justify-center gap-4 mt-0 ' style={{ backgroundColor: 'rgb(153, 0, 56)' }}>
+  <div className='w-[50px] h-[45px] overflow-hidden flex items-center justify-center bg-[pink] rounded-full'>
+     <a href="#"><img src={googlePlayStore} alt="" className='w-[24px] h-[23px]' /></a>
+  </div>
 
-<p><svg stroke="currentColor" fill="black" stroke-width="0" width='15px' viewBox="0 0 1024 1024" class="mr-1.5" xmlns="http://www.w3.org/2000/svg"><path d="M747.4 535.7c-.4-68.2 30.5-119.6 92.9-157.5-34.9-50-87.7-77.5-157.3-82.8-65.9-5.2-138 38.4-164.4 38.4-27.9 0-91.7-36.6-141.9-36.6C273.1 298.8 163 379.8 163 544.6c0 48.7 8.9 99 26.7 150.8 23.8 68.2 109.6 235.3 199.1 232.6 46.8-1.1 79.9-33.2 140.8-33.2 59.1 0 89.7 33.2 141.9 33.2 90.3-1.3 167.9-153.2 190.5-221.6-121.1-57.1-114.6-167.2-114.6-170.7zm-105.1-305c50.7-60.2 46.1-115 44.6-134.7-44.8 2.6-96.6 30.5-126.1 64.8-32.5 36.8-51.6 82.3-47.5 133.6 48.4 3.7 92.6-21.2 129-63.7z"></path></svg>
-<a href="#"><img src='' alt=""  /></a></p>
+  <div className='w-[50px] h-[45px] overflow-hidden flex items-center justify-center bg-[pink] rounded-full'>
+     <a href="#"><svg stroke="currentColor" fill="black" stroke-width="0" width='24px' height='23px' viewBox="0 0 1024 1024" class="mr-1.5" xmlns="http://www.w3.org/2000/svg"><path d="M747.4 535.7c-.4-68.2 30.5-119.6 92.9-157.5-34.9-50-87.7-77.5-157.3-82.8-65.9-5.2-138 38.4-164.4 38.4-27.9 0-91.7-36.6-141.9-36.6C273.1 298.8 163 379.8 163 544.6c0 48.7 8.9 99 26.7 150.8 23.8 68.2 109.6 235.3 199.1 232.6 46.8-1.1 79.9-33.2 140.8-33.2 59.1 0 89.7 33.2 141.9 33.2 90.3-1.3 167.9-153.2 190.5-221.6-121.1-57.1-114.6-167.2-114.6-170.7zm-105.1-305c50.7-60.2 46.1-115 44.6-134.7-44.8 2.6-96.6 30.5-126.1 64.8-32.5 36.8-51.6 82.3-47.5 133.6 48.4 3.7 92.6-21.2 129-63.7z"></path></svg>
+  </a>
 </div>
+</div>
+
+{/* batons */}
+{/* <div className='relative w-full'>
+  <div className='abolute  w-[50%] -m-[10rem]'>
+    <img src={batonReceiver} alt="" />
+  </div>
+
+  <div  className='abolute right-[-20px] w-[50%]'>
+    <img src={batonGiver} alt="" />
+  </div>
+</div> */}
+
+
+ {/* <div className='background_containersse relative'>
+        <img src={batonReceiver} alt="baton receiver" className='absolute left-0 top-0 w-full h-full' />
+        <img src={batonGiver} alt="baton giver" className='absolute right-0 bottom-0 w-full h-full' />
+      </div> */}
+
+<div className='mx-auto px-[1rem] pt-16'  style={{ backgroundColor: 'rgb(153, 0, 56)' }}>
+<div className="grid lg:grid-cols-2 lg:gap-32"  >
+  <div className='flex items-center relative '>
+  <span className='relative z-10 leading-tight text-6xl text-[white] '>
+        chowdeck <br /> has <br />you covered
+      </span>
+      <span className='lg:absolute -ml-4 -right-8 md:right-10 bottom-0'>
+        <img src={manPackage} alt=""  className='w-40 md:w-[230px] lg:w-[150px] h-full'/>
+      </span>
+  </div>
+      <p className='text-sm md:text-lg lg:text-2xl mt-4 text-[white] '>Say goodbye to harrowing deliveries and say hello to quick and easy deliveries.Relay is here! Download the app and let's get racing!
+      </p>
+</div>
+</div>
+
+
+{/* MARQUEE */}
+
+{/* <marquee width="100%" direction="left" height="100px">
+<div className="flex">
+<div className='flex w-[16rem] gap-2 rounded border-blue-500' >
+  <img src={starLike} alt="" />
+  <h2>Live updates on deliveries</h2>
+</div>
+<div className='flex w-[16rem] gap-2 rounded border-blue-500' >
+  <img src={starLike} alt="" />
+  <h2>Live updates on deliveries</h2>
+</div>
+<div className='flex w-[16rem] gap-2 rounded border-blue-500' >
+  <img src={starLike} alt="" />
+  <h2>Live updates on deliveries</h2>
+</div>
+<div className='flex w-[16rem] gap-2 rounded border-blue-500' >
+  <img src={starLike} alt="" />
+  <h2>Live updates on deliveries</h2>
+</div>
+</div>
+</marquee> */}
+
+<div style={{ backgroundColor: 'rgb(153, 0, 56)' }}>
+{/* <marquee behavior="scroll" direction="left">
+<div className="flex justify-between marquee-container ">
+  <div className='marquee-item'>
+  <div className='flex w-[18rem] items-center justify-center gap-2 rounded bg-[#a31a4c] text-[#e1b5c4]' >
+  <img src={starLike} alt=""  style={{ fill: '#8c77ec' }} />
+  <h2 className='text-base font-semibold' >Live updates on deliveries</h2>
+</div>
+  </div>
+
+<div className='marquee-item'>
+<div className='flex w-[18rem] items-center justify-center gap-2 rounded bg-[#a31a4c] text-[#e1b5c4]' >
+  <img src={pearl} alt=""  style={{ fill: '#8c77ec' }} />
+  <h2 className='text-base font-semibold' style={{border:'5px red'}}>Highly-rated and vetted riders</h2>
+</div>
+</div>
+
+<div className='marquee-item'>
+<div className='flex w-[18rem] items-center justify-center gap-2 rounded bg-[#a31a4c] text-[#e1b5c4]' >
+  <img src={halfMoon} alt=""  style={{ fill: '#8c77ec' }} />
+  <h2 className='text-base font-semibold' style={{border:'5px red'}}>24/7 support for customers</h2>
+</div>
+</div>
+
+<div className='marquee-item'>
+<div className='flex w-[18rem] items-center justify-center gap-2 rounded bg-[#a31a4c] text-[#e1b5c4]' >
+  <img src={star} alt=""  style={{ fill: '#8c77ec' }} />
+  <h2 className='text-base font-semibold' style={{border:'5px red'}}>Quick and easy onboarding</h2>
+</div>
+</div>
+</div>
+</marquee> */}
+<AutoPlay/>
+</div>
+
+
+
+
+
+
+
+
+
+      
+
 
 
 

@@ -1,6 +1,4 @@
-/* eslint-disable no-unused-vars */
-/* eslint-disable react/prop-types */
-// src/ImageCarouselTwo.js
+
 import { useState, useEffect } from "react"
 
 const Carousel = ({ cards, interval,bg }) => {
@@ -26,18 +24,18 @@ const Carousel = ({ cards, interval,bg }) => {
       <img
         src={cards[currentIndexTwo].image}
         alt={`Image ${currentIndex.length - 1}`}
-        className=" w-[180px] h-[150px] "
+        className=" w-[180px] h-[150px] hidden sm:block "
       />
 
-      <div className={`lg:flex ${cards[currentIndex].bg} `}>
-        <div className="w-[50%] border rounded-md text-center">
-          <p className="font-medium text-2xl lg:text-[40px] text-4xl leading-[2.9rem] w-[10rem] pl-8 mt-10">{cards[currentIndex].description}</p>
+      <div className={` sm:flex  w-full ${cards[currentIndex].bg} `}>
+        <div className="w-full sm:w-[50%] border rounded-md text-center">
+          <p className="font-medium  lg:text-[40px] text-4xl leading-[2.9rem] w-[26rem] sm:w-[10rem] pl-8 mt-10">{cards[currentIndex].description}</p>
         </div>
-      <div className="w-[50%] rounded-lg">
+      <div className="w-full sm:w-[50%] rounded-lg">
       <img
           src={cards[currentIndex].image}
           alt={`Image ${currentIndex + 1}`}
-          className=" w-[500px] h-[350px]"
+          className=" w-[500px] h-[350px] "
         />
       </div>
         
@@ -46,7 +44,7 @@ const Carousel = ({ cards, interval,bg }) => {
       <img
         src={cards[currentIndexOne].image}
         alt={`Image ${currentIndexOne + 1}`}
-        className=" w-[180px] h-[150px] "
+        className=" w-[180px] h-[150px]  hidden sm:block "
       />
     </div>
 

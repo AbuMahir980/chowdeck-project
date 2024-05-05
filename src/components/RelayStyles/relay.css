@@ -10,3 +10,80 @@
     background-color: rgb(255, 179, 206);
     background-color: '#ffb3ce';
 } */
+
+/* .BatonGiver-et-BatonReciever {
+    position: relative;
+    background-image: url('../../components/relayComponents/relayAssets/batonReceiver.svg'), url('../../components/relayComponents/relayAssets/batonGiver.svg');
+    background-position: left -10%,right -10% ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+} */
+
+.BatonGiver-et-BatonReciever::before {
+    content: "";
+    position: absolute;
+    top: 450%;
+    left: 0;
+    transform: translateY(-50%); 
+    width: 50%; /* Adjust the width as needed */
+    height: 100vh;
+    background-image: url('../../components/relayComponents/relayAssets/batonReceiver.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: -50px;
+}
+
+.BatonGiver-et-BatonReciever::after {
+    content: "";
+    position: absolute;
+    top: 450%;
+    right: 0;
+    transform: translateY(-50%); 
+    width: 50%; /* Adjust the width as needed */
+    height: 100vh;
+    background-image: url('../../components/relayComponents/relayAssets/batonGiver.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: -10px;
+}
+
+@media (max-width: 767px) {
+    .BatonGiver-et-BatonReciever::before,
+    .BatonGiver-et-BatonReciever::after {
+        top: 10%; /* Adjust the top position for smaller screens */
+        transform: translateY(-50%);
+    }
+}
+
+@media (max-width: 414px) {
+    .BatonGiver-et-BatonReciever::before,
+    .BatonGiver-et-BatonReciever::after {
+        top: 220%; /* Adjust the top position for smaller screens */
+        transform: translateY(-50%);
+    }
+}
+
+/* .marquee-container {
+    display: flex;
+    overflow: hidden;
+  }
+  
+  .marquee-item {
+    animation: marquee-slide 10s linear infinite;
+  }
+  
+  @keyframes marquee-slide {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  } */
+  
+
+   
