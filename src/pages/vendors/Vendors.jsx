@@ -1,12 +1,14 @@
 // import hero from '../../assets/vendors/hero.svg';
 import Buttons from '../../components/vendorComponents/Buttons';
 import Navbar from '../../shared/Navbar';
+import Community from '../../components/vendorComponents/Community';
+import Story from '../../components/vendorComponents/Story';
 import playStore from '../../assets/vendors/googlePlay.svg';
 import appStore from '../../assets/vendors/appStore.svg';
 import downArrow from '../../assets/vendors/networks/downArrow.svg';
 import Card from '../../components/vendorComponents/Card';
 import { networks } from '../../utils/ListItems';
-import Community from '../../components/vendorComponents/Community';
+
 
 
 
@@ -62,6 +64,7 @@ const Vendors = () => {
             <div className='w-full flex justify-center items-end h-60 mt-8'>
                 <Community />
             </div>
+                <Story />
         </div>
     ); 
 

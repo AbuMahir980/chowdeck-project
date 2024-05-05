@@ -23,6 +23,9 @@ import fwdArrowThin from '../assets/vendors/networks/fwdArrowThin.svg';
 import order from '../assets/vendors/networks/order.webp';
 import deliver from '../assets/vendors/networks/deliver.webp';
 import scenes from '../assets/vendors/networks/scenes.webp';
+import Founders from '../assets/vendors/stories/ceos.jpg';
+import Kfc from '../assets/vendors/stories/KFC.png';
+import Relay from '../assets/vendors/stories/Relay.png';
 
 export const items = [
         { text: 'Customers', icon: parcel},
@@ -70,5 +73,26 @@ export const networks = [
         actionTxt: "SEE MORE", 
         actionIcon: fwdArrowThin, 
         contImg: scenes
+    }
+]
+
+export const storiesData = [
+    {
+        img: Founders, 
+        heading:"CHOWDECK SECURES $2.5 MILLION SEED FUNDING TO OPTIMIZE ON-DEMAND FOOD DELIVERY IN NIGERIA", 
+        text:"We have secured $2.5 million in seed funding to optimize our operations and support expansion into more cities across th..", 
+        btnText:"Read More"
+    },
+    {
+        img: Kfc, 
+        heading:"THE ECOSYSTEM MEETS KFC", 
+        text:"We're thrilled to welcome KFC to our ever-evolving ecosystem!", 
+        btnText:"Read More"
+    },
+    {
+        img: Relay, 
+        heading:"INTRODUCING RELAY BY CHOWDECK - A GAME CHANGER FOR LOGISTICS NATIONWIDE!", 
+        text:"We're thrilled to introduce you to Relay, here to help you send and receive packages with ease!", 
+        btnText:"Read More"
     }
 ]

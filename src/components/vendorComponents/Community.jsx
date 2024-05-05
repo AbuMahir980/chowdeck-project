@@ -1,5 +1,4 @@
 import Buttons from "./Buttons";
-import Circle from '../../assets/vendors/circle.svg';
 import Tweet from '../../assets/vendors/tweet.svg';
 
 
