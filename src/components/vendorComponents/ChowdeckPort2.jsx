@@ -1,5 +1,5 @@
-import React from 'react'
-import chowFounder from '../../assets/chowdeck/Chowdeck Logistics _ Delivering happiness-14.svg'
+import React from "react";
+import chowFounder from "../../assets/chowdeck/Chowdeck Logistics _ Delivering happiness-14.svg";
 import chowOwner from "../../assets/chowdeck/1698762681.jpg";
 
 const ChowdeckPort2 = () => {
@@ -8,8 +8,8 @@ const ChowdeckPort2 = () => {
       <div className="px-16  ">
         <div className=" border-4 border-black rounded-t-lg bg-white ">
           <span>
-            <div className="flex justify-around  border-black outline-none border-solid">
-              <div className="border-black border-4">
+            <div className="flex justify-around rtl border-black outline-none border-solid">
+              <div className="border-black border-4 border-s-4">
                 <p className="bg-[#0C513F] p-6 box-border rounded-lg-lg text-2xl text-white flex font-bold w-[500px]">
                   <span src={chowFounder}></span>Founder's Story
                 </p>
@@ -68,7 +68,7 @@ const ChowdeckPort2 = () => {
               </span>
             </div>
 
-            <div className="border-black outline flex border-solid-9 border-r-4"></div>
+            {/* <div className="border-black outline flex border-solid-9 border-r-4"></div> */}
 
             <div>
               <h2 className="mx-32 mt-6 text-2xl font-normal">
@@ -83,6 +83,6 @@ const ChowdeckPort2 = () => {
       </div>
     </div>
   );
-}
+};
 
-export default ChowdeckPort2
+export default ChowdeckPort2;
