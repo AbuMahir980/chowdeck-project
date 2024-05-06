@@ -33,7 +33,7 @@ const AutoPlay = () => {
         <img src={starLike} alt=""  style={{ fill: '#8c77ec' }} />
         <h2 className='text-base font-semibold' >Live updates on deliveries</h2>
       </div>
-      <div className='mt-4'>
+      <div className='mt-20'>
             <img src={acceptOrder} alt=""  className='w-[369px]' />  
       </div>
   </div>
@@ -43,7 +43,7 @@ const AutoPlay = () => {
         <img src={pearl} alt=""  style={{ fill: '#8c77ec' }} />
         <h2 className='text-base font-semibold' >Highly-rated and vetted riders</h2>
       </div>
-      <div className='mt-4'>
+      <div className='mt-20'>
         <img src={pickUp } alt=""  className='w-[369px]'  />
       </div>
     </div>
@@ -53,7 +53,7 @@ const AutoPlay = () => {
        <img src={halfMoon} alt=""  style={{ fill: '#8c77ec' }} />
        <h2 className='text-base font-semibold' >24/7 support for customers</h2>
     </div>
-    <div className='mt-4'>
+    <div className='mt-20'>
        <img src={orderTransit} alt=""  className='w-[369px]' /> 
       </div>
       </div>
@@ -63,7 +63,7 @@ const AutoPlay = () => {
          <img src={star} alt=""  style={{ fill: '#8c77ec' }} />
          <h2 className='text-base font-semibold' >Quick and easy onboarding</h2>
       </div>
-      <div className='mt-4'>
+      <div className='mt-20'>
         <img src={orderArrived} alt="" className='w-[369px]' />
         </div>
       </div>
