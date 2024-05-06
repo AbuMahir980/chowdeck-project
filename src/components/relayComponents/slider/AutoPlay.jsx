@@ -29,7 +29,7 @@ const AutoPlay = () => {
       <Slider {...settings}>
         {/* 1 */}
      <div>
-      <div className='flex w-[18rem] items-center justify-center gap-2 rounded bg-[#a31a4c] text-[#e1b5c4]' >
+      <div className='flex w-[20rem] items-center justify-center gap-2 rounded bg-[#a31a4c] text-[#e1b5c4]' >
         <img src={starLike} alt=""  style={{ fill: '#8c77ec' }} />
         <h2 className='text-base font-semibold' >Live updates on deliveries</h2>
       </div>
@@ -39,7 +39,7 @@ const AutoPlay = () => {
   </div>
 {/* 2 */}
     <div>
-        <div className='flex w-[18rem] mt-4 items-center justify-center gap-2 rounded bg-[#a31a4c] text-[#e1b5c4]' >
+        <div className='flex w-[20rem] mt-4 items-center justify-center gap-2 rounded bg-[#a31a4c] text-[#e1b5c4]' >
         <img src={pearl} alt=""  style={{ fill: '#8c77ec' }} />
         <h2 className='text-base font-semibold' >Highly-rated and vetted riders</h2>
       </div>
@@ -49,7 +49,7 @@ const AutoPlay = () => {
     </div>
 {/* 3 */}
   <div>
-    <div className='flex w-[18rem] items-center justify-center gap-2 rounded bg-[#a31a4c] text-[#e1b5c4]' >
+    <div className='flex w-[20rem] items-center justify-center gap-2 rounded bg-[#a31a4c] text-[#e1b5c4]' >
        <img src={halfMoon} alt=""  style={{ fill: '#8c77ec' }} />
        <h2 className='text-base font-semibold' >24/7 support for customers</h2>
     </div>
@@ -59,7 +59,7 @@ const AutoPlay = () => {
       </div>
 {/* 4 */}
     <div>
-      <div className='flex w-[18rem] items-center justify-center gap-2 rounded bg-[#a31a4c] text-[#e1b5c4]' >
+      <div className='flex w-[20rem] items-center justify-center gap-2 rounded bg-[#a31a4c] text-[#e1b5c4]' >
          <img src={star} alt=""  style={{ fill: '#8c77ec' }} />
          <h2 className='text-base font-semibold' >Quick and easy onboarding</h2>
       </div>

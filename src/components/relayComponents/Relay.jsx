@@ -39,7 +39,7 @@ const Relay = () => {
    <h2 className='lg:text-xl mb-10'>Send and receive packages easily with Relay!</h2>
    <div className='flex flex-col md:flex-row items-center justify-center md:gap-4'>
 
-  <Button image={googlePlayStore} text='Download on Google Playstore'/>
+  <Button image={googlePlayStore} text='Download on Google store'/>
   <Button  image={appleStore} text='Download on Applestore'/>
   </div>
   <span className='flex flex-col items-center relative'>
