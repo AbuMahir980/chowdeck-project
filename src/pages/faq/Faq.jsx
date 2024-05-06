@@ -1,6 +1,9 @@
 import { useState } from "react"
 import Questions from "../../shared/faq/Questions"
 import Ans from "../../shared/Ans"
+import Fotter from "../fotter/Fotter"
+import Checkout from "../checkout/Checkout"
+
 
 const Faq = () => {
     const [card, setCard] = useState(1)
@@ -9,9 +12,10 @@ const Faq = () => {
         setCard(card)
     }
     return (
-        <div className="mx-16 rounded-[9px] border-4 border-black p-8 flex gap-8">
+        <>
+        <div className="mx-16 rounded-[9px] border-4 border-black p-6 flex gap-8 h-[43rem] ">
 
-            <div className="">
+            <div className="overflow-y-auto w-[50%]">
                 <h1 className="text-[#0d5240] text-[64px] font-bold">FAQs.</h1>
                 <div className="flex flex-col gap-y-4">
                     <Questions onClick={() => handleCardNext(1)} text="What is chowdeck? " className={card === 1 ? "bg-black text-white" : "bg-white text-black"} />
@@ -28,7 +32,7 @@ const Faq = () => {
                     <Questions onClick={() => handleCardNext(12)} text="what locations do we currently deliver to ? " className={card === 12 ? "bg-black text-white" : "bg-white text-black"} />
                 </div>
             </div>
-            <div className="">
+            <div className="w-[50%]">
                 <h1 className="text-[#0d5240] text-[64px] font-bold">Ans.</h1>
                 {
                     card === 1 && <Ans ans="Chowdeck is a technology company that provides logistics services to both vendors and consumers. This potentially allows food vendors to deliver meals seamlessly while also providing consumers with an easy platform to order meals from their favourite restaurants in their city." />
@@ -83,6 +87,9 @@ const Faq = () => {
             </div>
 
         </div>
+       
+
+        </>
     )
 }
 export default Faq
