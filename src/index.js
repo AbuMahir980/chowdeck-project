@@ -9,8 +9,9 @@ import Navbar from './shared/Navbar';
 import Relay from './components/relayComponents/Relay';
 import Riders from './riders/Riders';
 import Vendors from './pages/vendors/Vendors';
-import Store from './components/store/Store';
-import Singlecard from './components/store/Singlecard'
+// import Store from './components/store/FoodCard';
+import SingleFoodCard from './components/store/SingleFoodCard'
+import FoodCard from './components/store/FoodCard';
 // import reportWebVitals from './reportWebVitals';
 
 
@@ -36,13 +37,13 @@ const router = createBrowserRouter([
     element: <Riders />
   },
   {
-    path: '/store',
-    element: <Store />
+    path: '/foodcard',
+    element: <FoodCard />
   },
   {
-    // path: '/singlecard/:id',
-    path: '/singlecard/',
-    element: <Singlecard />
+    // path: '/singlefoodcard/:id',
+    path: '/singlefoodcard/',
+    element: <SingleFoodCard />
   }
   
 ]);

@@ -2,9 +2,9 @@ import React from 'react'
 import foodImage from '../relayComponents/relayAssets/foodImage.png'
 import loveIcon from '../relayComponents/relayAssets/loveIcon.png'
 import clockIon from '../relayComponents/relayAssets/icons8-clock-25.png'
-import Card from '../../components/store/Card'
+import Card from './Card'
 
-const Store = () => {
+const FoodCard = () => {
   return (
     <>
     <div className='flex justify-center'>
@@ -86,4 +86,4 @@ const Store = () => {
   )
 }
 
-export default Store
+export default FoodCard

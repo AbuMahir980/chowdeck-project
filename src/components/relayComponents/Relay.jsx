@@ -20,6 +20,7 @@ import pearl from '../../components/relayComponents/relayAssets/pearl.svg'
 import halfMoon from '../../components/relayComponents/relayAssets/halfMoon.svg'
 import star from '../../components/relayComponents/relayAssets/star.svg'
 import AnotherAutoplay from './slider/AnotherAutoplay'
+import Pasta from '../relayComponents/relayAssets/Pasta.svg'
 
 
 
@@ -240,6 +241,12 @@ const Relay = () => {
 </marquee> */}
 <AutoPlay/>
 </div>
+
+<div className='flex text-6xl items-center font-bold'>
+<p>Stories</p>
+<img src={Pasta} alt="" />
+</div>
+
 
 
 
