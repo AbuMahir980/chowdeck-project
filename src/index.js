@@ -13,6 +13,12 @@ import Vendors from './pages/vendors/Vendors';
 import FAQS from './pages/faq/Faq';
 import Blog from './pages/blog/Blog';
 import Store from './pages/store/Store';
+import SignUpCard from './components/storeComponents/SignUpCard';
+import LogInCard from './components/storeComponents/LogInCard';
+import VerifyOtp from './pages/verfiyOtp/VerifyOtp';
+import AddToCartCard from './components/addtocart/AddToCartCard';
+import { ToastContainer, toast } from 'react-toastify';
+  import 'react-toastify/dist/ReactToastify.css';
 // import reportWebVitals from './reportWebVitals';
 
 const router = createBrowserRouter([
@@ -48,12 +54,32 @@ const router = createBrowserRouter([
     path:'/blog' ,
     element: <Blog  />
   },
+  {
+    path: '/signup',
+    element: <SignUpCard/> 
+  },
+  {
+    path: '/login',
+    element: <LogInCard/>
+  },
+  {
+    path: '/verifyotp',
+    element: <VerifyOtp />
+  },
+  {
+    path: '/addtocart',
+    element: <AddToCartCard />
+  }
+
+
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    
+      <RouterProvider router={router} />
+      <ToastContainer />
   </React.StrictMode>
 );
 

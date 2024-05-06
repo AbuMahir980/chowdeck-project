@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 const LogInCard = () => {
     return(
         <div className="flex justify-center bg-black bg-opacity-60 w-full min-h-screen fixed top-0">
@@ -14,7 +15,11 @@ const LogInCard = () => {
                     </div>                     
                     <button className='rounded-lg h-16 w-full bg-[#0c513f] text-white flex self-start items-center justify-center mb-6 sm:w-full'>Sign In</button>
                 </div>
-                <p className='text-base font-normal text-[#999999] sm:font-medium'>New to Chowdeck? <span className='text-[#0c513f]'>Sign Up</span></p>
+                <p className='text-base font-normal text-[#999999] sm:font-medium'>New to Chowdeck? <span className='text-[#0c513f]'>
+                <Link to ="/signup">
+                    Sign Up
+                </Link>
+                </span></p>
             </div>
         </div>
     )

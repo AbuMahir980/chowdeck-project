@@ -12,10 +12,10 @@ const Store = () => {
                 
 
             </div>
-            {/* <SignUpCard/> */}
-            {/* <LogInCard/> */}
+            <SignUpCard/> 
+            {/* <LogInCard/>
             <VerifyOtp />
-            {/* <AddToCartCard /> */}
+            <AddToCartCard /> */}
         </>
     )
 }

@@ -8,23 +8,26 @@ const VerifyOtp = () => {
   const [buttonActive, setButtonActive] = useState(false);
   const [counter, setCounter] = useState(60);
   const [resend, setResend] = useState(false);
+
+
   const handleOtp = (e) => {
     setOtp(e);
-    if (otp.length < 4) {
+    if (otp.length < process.env.OTP_LENGTH) {
       setButtonActive(false);
     }
   };
   const handleResend = () => {
     if (counter === 0) {
       setResend(true);
+      setCounter(60);
+
     }
     setResend(false);
-    setCounter(60);
     setOtp("");
   };
 
   useEffect(() => {
-    if (otp.length === 4) {
+    if (otp.length === process.env.OTP_LENGTH) {
       setButtonActive(true);
     }
   }, [otp]);
@@ -48,10 +51,10 @@ const VerifyOtp = () => {
             <OtpInput
               value={otp}
               skipDefaultStyles={true}
-              inputStyle=" lg:w-[80px] lg:h-[60px] w-[40px] h-[40px] text-center rounded-[5px] font-semibold text-[20px] bg-[#f3f6f5] outline-none"
+              inputStyle="  items-center lg:w-[80px] lg:h-[60px] w-[40px] h-[40px] text-center rounded-[5px] font-semibold text-[20px] bg-[#f3f6f5] outline-none"
               onChange={setOtp}
               containerStyle="gap-5"
-              numInputs={4}
+              numInputs={6}
               renderInput={(props) => <input {...props} />}
             />
           </div>
@@ -61,8 +64,8 @@ const VerifyOtp = () => {
               className="bg-[#0c513f] text-white text-center mt-5 w-full"
               Disabled={otp.length < 4 ? true : false}
             /> */}
-            <button className={`${otp.length<4?'bg-[#0c513f] opacity-55':'bg-[#0c513f]'} text-white w-full p-3 rounded-[10px]`} disabled={otp.length<4?true:false}>
-                verfify
+            <button className={`${otp.length<process.env.OTP_LENGTH?'bg-[#0c513f] opacity-55':'bg-[#0c513f]'} text-white w-full p-3 rounded-[10px]`} disabled={otp.length<process.env.OTP_LENGTH?true:false}>
+                verify
             </button>
           </div>
           <span className="md:text-center text-base font-normal text-[#acacac]">
