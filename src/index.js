@@ -11,6 +11,7 @@ import Navbar from './shared/Navbar';
 import LgMenuList from './shared/components/LgMenuList';
 import Company from './components/vendorComponents/Company';
 import MyOrders from './components/vendorComponents/MyOrders';
+import Card from './components/vendorComponents/Card';
 // import reportWebVitals from './reportWebVitals';
 
 
@@ -44,7 +45,11 @@ const router = createBrowserRouter([
   },
   {
     path: "/order",
-    element: <MyOrders/>
+    element: <MyOrders />,
+  },
+  {
+    path: "/mycard",
+    element: <Card />,
   },
 ]);
 const root = ReactDOM.createRoot(document.getElementById('root'));
