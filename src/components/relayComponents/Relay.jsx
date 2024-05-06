@@ -11,6 +11,20 @@ import Navbar from '../../shared/Navbar'
 import cardThree from '../../components/relayComponents/relayAssets/cardThree.svg'
 import cardTwo from '../../components/relayComponents/relayAssets/cardTwo.svg'
 import cardOne from '../../components/relayComponents/relayAssets/cardOne.svg'
+import batonReceiver from '../../components/relayComponents/relayAssets/batonReceiver.svg'
+import batonGiver from '../../components/relayComponents/relayAssets/batonGiver.svg'
+import boxCarrier from '../../components/relayComponents/relayAssets/boxCarrier.svg'
+import manPackage from '../../components/relayComponents/relayAssets/manPackage.svg'
+import starLike from '../../components/relayComponents/relayAssets/starLike.svg'
+import AutoPlay from './slider/AutoPlay'
+import pearl from '../../components/relayComponents/relayAssets/pearl.svg'
+import halfMoon from '../../components/relayComponents/relayAssets/halfMoon.svg'
+import star from '../../components/relayComponents/relayAssets/star.svg'
+import AnotherAutoplay from './slider/AnotherAutoplay'
+
+
+
+
 const Relay = () => {
 
 

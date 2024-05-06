@@ -33,7 +33,7 @@ const Carousel = ({ cards, interval,bg }) => {
         <div className="w-[50%] border rounded-md text-center">
           <p className="font-medium lg:text-[40px] text-4xl leading-[2.9rem] w-[10rem] pl-8 mt-10">{cards[currentIndex].description}</p>
         </div>
-      <div className="w-[50%] rounded-lg">
+      <div className="w-full sm:w-[50%] rounded-lg">
       <img
           src={cards[currentIndex].image}
           alt={` ${currentIndex + 1}`}
@@ -46,7 +46,7 @@ const Carousel = ({ cards, interval,bg }) => {
       <img
         src={cards[currentIndexOne].image}
         alt={`Image ${currentIndexOne + 1}`}
-        className=" w-[180px] h-[150px] "
+        className=" w-[180px] h-[150px]  hidden sm:block "
       />
     </div>
   );
