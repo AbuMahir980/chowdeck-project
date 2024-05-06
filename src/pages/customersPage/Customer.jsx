@@ -26,7 +26,7 @@ const Customer = () => {
         <div className="">
           <div className="">
             <h1 className="lg:text-[112px] font-[700] text-center flex justify-center items-center">
-              <Texteffect text={text} interval={3000} delay={1000} />
+              <Texteffect text={text} interval={3000}  />
             </h1>
           </div>
           <div className="flex gap-4 justify-center items-center">
@@ -44,6 +44,7 @@ const Customer = () => {
         <h1 className="text-[65px] text-center text-[#d1d5db] mt-16">
           Join our growing network
         </h1>
+
         <img src={arrowDown} alt="" className="w-12 h-12" />
       </div>
     </div>

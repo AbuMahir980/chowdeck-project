@@ -11,7 +11,7 @@ const Button = ({ text, image, className, ...props }) => {
           <img src={image} alt="" className="w-6 h-6 flex items-center" />
         ) : null}
       </div>
-      <p>{text}</p>
+      <p className="text-center">{text}</p>
     </button>
   );
 };

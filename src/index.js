@@ -12,8 +12,7 @@ import Riders from './riders/Riders';
 import Vendors from './pages/vendors/Vendors';
 import FAQS from './pages/faq/Faq';
 import Blog from './pages/blog/Blog';
-import Store from './pages/store/Store'
-
+import Store from './pages/store/Store';
 // import reportWebVitals from './reportWebVitals';
 
 const router = createBrowserRouter([
@@ -48,7 +47,7 @@ const router = createBrowserRouter([
   {
     path:'/blog' ,
     element: <Blog  />
-  }
+  },
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
