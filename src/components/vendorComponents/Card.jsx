@@ -19,4 +19,5 @@ const Card = ({icon, heading, text, actionTxt, actionIcon, contImg}) => {
     )
 }
 
-export default Card
+
+export default Card;

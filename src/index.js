@@ -13,6 +13,7 @@ import Vendors from './pages/vendors/Vendors';
 import FAQS from './pages/faq/Faq';
 import Blog from './pages/blog/Blog';
 import Store from './pages/store/Store'
+
 // import reportWebVitals from './reportWebVitals';
 
 const router = createBrowserRouter([
