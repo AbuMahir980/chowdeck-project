@@ -3,24 +3,45 @@ import { useEffect, useState } from "react";
 import OtpInput from "react-otp-input";
 import { Link } from "react-router-dom";
 // import Button from "../customersPage/shared/Button";
+import { SIGNUP_VERIFY_OTP, LOGIN_URL } from "../../services/api";
+import axios from "axios";
+import { toast } from 'react-toastify';
+import { useNavigate } from "react-router-dom";
+import { LOGIN } from "../../routes";
+
 const VerifyOtp = () => {
+
+  const Redirect = useNavigate()
+
   const [otp, setOtp] = useState("");
   const [buttonActive, setButtonActive] = useState(false);
   const [counter, setCounter] = useState(60);
   const [resend, setResend] = useState(false);
 
 
-  const handleOtp = (e) => {
-    setOtp(e);
-    if (otp.length < process.env.OTP_LENGTH) {
-      setButtonActive(false);
+  const handleSubmitOtp = async(e) => {
+    try{
+
+        if(otp.length < process.env.OTP_LENGTH) return
+        const result = await axios({
+          method: 'get',
+          url: `${SIGNUP_VERIFY_OTP}/${localStorage.getItem('email')}/${otp}`
+        })
+        if(!result.status) throw new Error(result.message)
+        toast(result.message)
+        localStorage.removeItem('email')
+        Redirect(LOGIN)
+    
+    }catch(err){
+        toast(err.response.data.message || "Something went wrong...")
     }
+  
   };
   const handleResend = () => {
+
     if (counter === 0) {
       setResend(true);
       setCounter(60);
-
     }
     setResend(false);
     setOtp("");
@@ -41,7 +62,7 @@ const VerifyOtp = () => {
     <>
       <div className="flex justify-center items-center  bg-black bg-opacity-60 fixed top-[10rem] sm:top-0 z-40 min-h-screen w-full">
         <div className="w-[40%] h-[80vh] bg-white rounded-[25px] p-16 flex flex-col justify-center items-center gap-y-5">
-          <h1 className="text-black text-center text-[24px] font-[500] mb-2">
+          <h1 className="text-black text-center text-[24px] font-[500] mb-2" >
             Verify Phone Number
           </h1>
           <p className="text-center text-[#acacac]">
@@ -64,7 +85,7 @@ const VerifyOtp = () => {
               className="bg-[#0c513f] text-white text-center mt-5 w-full"
               Disabled={otp.length < 4 ? true : false}
             /> */}
-            <button className={`${otp.length<process.env.OTP_LENGTH?'bg-[#0c513f] opacity-55':'bg-[#0c513f]'} text-white w-full p-3 rounded-[10px]`} disabled={otp.length<process.env.OTP_LENGTH?true:false}>
+            <button onClick={handleSubmitOtp} className={`${otp.length<process.env.OTP_LENGTH?'bg-[#0c513f] opacity-55':'bg-[#0c513f]'} text-white w-full p-3 rounded-[10px]`} disabled={otp.length<process.env.OTP_LENGTH?true:false}>
                 verify
             </button>
           </div>

@@ -28,7 +28,7 @@ const SignUpCard = () => {
         e.preventDefault()
         setIsSubmit(() => !isSubmit)
         try{
-        const result = await axios({
+           const result = await axios({
             method: 'post',
             url: SIGNUP_URL,
             data
@@ -36,7 +36,7 @@ const SignUpCard = () => {
 
         if(!result.status) throw new Error(result.message)
         toast(result.message)
-        localStorage.setItem('email', email)
+        localStorage.setItem('email', data.email)
         Redirect(VERIFY_OTP_SCREEN)
 
         }catch(err){
