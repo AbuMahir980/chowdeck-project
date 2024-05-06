@@ -1,5 +1,5 @@
 import Buttons from "./Buttons";
-import Tweet from '../../assets/vendors/tweet.svg';
+import Tweets from '../../assets/vendors/tweet.svg';
 
 
 const Community = () => {
@@ -9,7 +9,7 @@ const Community = () => {
                 <span className="bg-[#FFB3CE] border-[3px] border-black block w-4 h-4 rounded-full mr-2"></span>
                 <p>Street Cred</p>
             </div>
-            <Buttons img={Tweet} text="Join our community" bgColor="bg-[#1DA1F2]" width="w-52" height="h-12" textWeight="font-medium" textSize="text-base" />
+            <Buttons img={Tweets} text="Join our community" bgColor="bg-[#1DA1F2]" width="w-52" height="h-12" textWeight="font-medium" textSize="text-base" />
         </div>
     )
 }
