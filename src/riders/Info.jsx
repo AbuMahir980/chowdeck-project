@@ -7,15 +7,19 @@ import InfoCard from './infoCard'
 const images = [
   {
     image: unlockLogo,
-    text: "Unlock new levels of growth."
+    text: "Unlock new levels of growth.",
+    innertext:"Own your hours, be your own boss, ride your vehicle, take loans, call shots, grow and learn with your team."
   },
   {
     image: metricesLogo,
-    text: "Track your metrics & bonuses earned."
+    text: "Track your metrics & bonuses earned.",
+    innertext:"Monitor your growth and earn huge bonuses as you go."
   },
   {
     image: metricesLogo,
-    text: "Withdraw straight to your account."
+    text: "Withdraw straight to your account.",
+    // innertext:"<p className="text-[20px] w-[350px]">Monitor your growth and earn huge bonuses as you go.</p>"
+    innertext:"Monitor your growth and earn huge bonuses as you go."
   },
 ]
 
@@ -24,7 +28,7 @@ const Info = () => {
 
 
   return (
-    <div className='mx-7 bg-white border-black border-4 rounded-[7px] p-7 z-10 relative top-[-50px]'>
+    <div className='mx-7 bg-white border-black border-4 rounded-[30px] p-7 z-10 relative top-[-180px] '>
     
     
       <InfoCard images={images} interval={3000} />

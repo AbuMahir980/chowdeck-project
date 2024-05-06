@@ -22,20 +22,20 @@ const InfoCard = ({ images, interval }) => {
 
 
     return (
-        <div className="flex">
+        <div className="flex h-[35rem] ">
 
 
             <div className="flex flex-col justify-between">
                 <div className='space-y-6'>
                     <h1 className="font-black text-[40px] w-[700px] leading-[60px]">{images[currentIndex].text}</h1>
-                    <p className="text-[20px] w-[350px]">Monitor your growth and earn huge bonuses as you go.</p>
+                    {/* <p className="text-[20px] w-[350px]">Monitor your growth and earn huge bonuses as you go.</p> */}
                     <div className="flex gap-2">
                         <div className='flex h-[50px] w-[50px] bg-green-700 rounded-full justify-center items-center' > <img src={playstore} alt="" className='w-[1rem] ' /></div>
                         <div className='h-[50px] w-[50px] bg-green-700 rounded-full flex justify-center items-center'><img src={applelogo} alt="" /></div>
                     </div>
 
                 </div>
-                <div className="flex gap-2">
+                <div className="flex gap-2 h-4 mb-[3.5rem]">
                     <div className={`flex h-[50px] w-[50px]  ${currentIndex === 0 ? "border" : "  border-none bg-black text-white"}  rounded-full justify-center items-center`} > 1</div>
                     <div className={`flex h-[50px] w-[50px]  ${currentIndex === 1 ? "border" : "  border-none bg-black text-white"}   rounded-full justify-center items-center`}>2</div>
                     <div className={`flex h-[50px] w-[50px]  ${currentIndex === 2 ? "border" : "  border-none bg-black text-white"}   rounded-full justify-center items-center`} >3</div>
@@ -43,6 +43,8 @@ const InfoCard = ({ images, interval }) => {
             </div>
 
             <div className="  w-[20rem] "> <img src={images[currentIndex].image} alt="" /></div>
+
+           
         </div>
     )
 }

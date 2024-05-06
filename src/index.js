@@ -10,6 +10,7 @@ import {
 import Navbar from './shared/Navbar';
 import Riders from './riders/Riders';
 import Vendors from './pages/vendors/Vendors';
+import Card from './riders/storeComponent/Card.';
 
 // import reportWebVitals from './reportWebVitals';
 
@@ -30,7 +31,13 @@ const router = createBrowserRouter([
   {
     path: '/riders',
     element: <Riders />
-  }
+  },
+  {
+    path: '/card',
+    element: <Card />
+  },
+  
+  
 ]);
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
