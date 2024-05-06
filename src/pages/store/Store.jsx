@@ -1,5 +1,6 @@
 import SignUpCard from "../../components/storeComponents/SignUpCard";
 import LogInCard from "../../components/storeComponents/LogInCard"
+import AddToCartCard from "../../components/addtocart/AddToCartCard";
 
 const Store = () => {
     return(
@@ -11,7 +12,8 @@ const Store = () => {
 
             </div>
             {/* <SignUpCard/> */}
-            <LogInCard/>
+            {/* <LogInCard/> */}
+            <AddToCartCard />
         </>
     )
 }

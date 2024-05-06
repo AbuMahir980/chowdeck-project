@@ -1,11 +1,14 @@
 // import hero from '../../assets/vendors/hero.svg';
 import Buttons from '../../components/vendorComponents/Buttons';
 import Navbar from '../../shared/Navbar';
+import Community from '../../components/vendorComponents/Community';
+import Story from '../../components/vendorComponents/Story';
 import playStore from '../../assets/vendors/googlePlay.svg';
 import appStore from '../../assets/vendors/appStore.svg';
 import downArrow from '../../assets/vendors/networks/downArrow.svg';
 import Card from '../../components/vendorComponents/Card';
 import { networks } from '../../utils/ListItems';
+
 
 
 
@@ -46,19 +49,22 @@ const Vendors = () => {
                 <div className='mb-10'></div>
                 <div className='mb-10'></div>
             </div>
-            <div className='flex flex-col justify-center items-center container mx-auto px-4 gap-2'>
+            <div className='flex flex-col justify-center items-center container mx-auto px-4 gap-12'>
                 <div className='flex justify-center items-center'>
-                    <h2 className='text-[#d1d5db] font-normal text-[32px] leading-[48px] tracking-tighter md:text-[48px] md:leading-[48px] md:tracking-tighter lg:text-[64px] lg:leading-[80px]'>Join our growing network</h2>
+                    <h2 className='text-[#d1d5db] font-normal text-[32px] leading-[48px] tracking-tight md:text-[48px] md:leading-[48px] md:tracking-tighter lg:text-[64px] lg:leading-[80px]'>Join our growing network</h2>
                     <img src={downArrow} alt="" className='w-6 h-6 md:w-14 md:h-14 lg:w-16 lg:h-16' />
                 </div>
                 
-                <div className='gap-4'>
+                <div className='gap-4 md:grid md:grid-cols-2 lg:grid lg:grid-cols-3'>
                     {
-                    networks.map((network, i) =>(<Card key={i} {...network}/>))
+                        networks.map((network, i) =>(<Card key={i} {...network}/>))
                     }
                 </div>
-                
             </div>
+            <div className='w-full flex justify-center items-end h-60 mt-8'>
+                <Community />
+            </div>
+                <Story />
         </div>
     ); 
 
