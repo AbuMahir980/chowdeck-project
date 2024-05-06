@@ -12,6 +12,7 @@ import Riders from './riders/Riders';
 import Vendors from './pages/vendors/Vendors';
 import FAQS from './pages/faq/Faq'
 import Blog from './pages/blog/Blog';
+import VerifyOtp from './pages/verfiyOtp/VerifyOtp';
 // import reportWebVitals from './reportWebVitals';
 
 const router = createBrowserRouter([
@@ -43,6 +44,10 @@ const router = createBrowserRouter([
   {
     path:'/blog' ,
     element: <Blog  />
+  },
+  {
+    path:'/verifyOtp' ,
+    element: <VerifyOtp  />
   }
 ]);
 

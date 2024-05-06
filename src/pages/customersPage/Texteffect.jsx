@@ -1,17 +1,17 @@
 
 import React, { useEffect, useState } from 'react'
 
-const Texteffect = ({ text, interval, delay }) => {
+const Texteffect = ({ text, interval }) => {
     const [currentText, setCurrentText] = useState(0);
     useEffect(() => {
       const textCount = text.length;
   
       const textTimer = setInterval(() => {
         setCurrentText((prevIndex) => (prevIndex + 1) % textCount);
-      }, interval + delay); 
+      }, interval ); 
   
       return () => clearInterval(textTimer);
-    }, [text, interval, delay]);
+    }, [text, interval]);
   
     return (
       <div className=''>
