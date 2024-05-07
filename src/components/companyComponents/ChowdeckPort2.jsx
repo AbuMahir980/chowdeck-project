@@ -33,7 +33,7 @@ const ChowdeckPort2 = () => {
                 </div>
               </div>
 
-              {/* <span className="mt-32 h-[1900px] w-[2400px]"></span> */}
+              
 
               <span className=" text-[18px] mt-3">
                 <p>
