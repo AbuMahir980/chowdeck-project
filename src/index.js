@@ -10,6 +10,7 @@ import Navbar from './shared/Navbar';
 import NavList from './shared/components/NavList';
 import Blog from './pages/blog/Blog';
 import LgMenuList from './shared/components/LgMenuList';
+import Store from './pages/Store/Store'
 // import reportWebVitals from './reportWebVitals';
  
 
@@ -29,7 +30,13 @@ const router = createBrowserRouter([
   {
    path:'/blog' ,
    element: <Blog  />
+  },
+  {
+  path:"/store",
+  element :<Store />
   }
+
+
 ]);
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
