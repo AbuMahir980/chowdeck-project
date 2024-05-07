@@ -41,8 +41,7 @@ const router = createBrowserRouter([
     element: <FoodCard />
   },
   {
-    // path: '/singlefoodcard/:id',
-    path: '/singlefoodcard/',
+    path: '/singlefoodcard/:id',
     element: <SingleFoodCard />
   }
   
