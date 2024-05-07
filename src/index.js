@@ -1,19 +1,15 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './styles/index.css';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./styles/index.css";
 
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
-import Navbar from './shared/Navbar';
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Navbar from "./shared/Navbar";
 // import NavList from './shared/components/NavList';
-import LgMenuList from './shared/components/LgMenuList';
-import Company from './components/vendorComponents/Company';
-import MyOrders from './components/vendorComponents/MyOrders';
-import Card from './components/vendorComponents/Card';
+import LgMenuList from "./shared/components/LgMenuList";
+import Company from "./components/companyComponents/Company";
+import MyOrders from "./components/companyComponents/MyOrders";
+import Card from "./components/companyComponents/Card";
 // import reportWebVitals from './reportWebVitals';
-
 
 const router = createBrowserRouter([
   {
@@ -52,7 +48,7 @@ const router = createBrowserRouter([
     element: <Card />,
   },
 ]);
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <RouterProvider router={router} />

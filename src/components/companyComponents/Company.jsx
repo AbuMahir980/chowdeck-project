@@ -3,7 +3,7 @@ import ChowdeckPort2 from "./ChowdeckPort2";
 import ChowdeckMovingImages from "./ChowdeckMovingImages";
 import hoverItems from "../../assets/chowdeck/web-bike-right.svg";
 import hoverItems2 from "../../assets/chowdeck/trees.svg";
-import tree from "../../assets/chowdeck/cloud-two.svg";
+// import tree from "../../assets/chowdeck/cloud-two.svg";
 import Navbar from "../../shared/Navbar";
 
 const Company = () => {

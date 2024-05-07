@@ -1,6 +1,10 @@
 import React from "react";
 import chowFounder from "../../assets/chowdeck/Chowdeck Logistics _ Delivering happiness-14.svg";
 import chowOwner from "../../assets/chowdeck/1698762681.jpg";
+import combinator from '../../assets/chowdeck/yc.png'
+import hoaq from '../../assets/chowdeck/hoaq.png'
+
+
 
 const ChowdeckPort2 = () => {
   return (
@@ -9,7 +13,7 @@ const ChowdeckPort2 = () => {
         <div className=" border-4 border-black rounded-t-lg bg-white ">
           <span>
             <div className="flex justify-around rtl border-black outline-none border-solid">
-              <div className="border-black border-4 border-s-4">
+              <div className="border-black border-4 ">
                 <p className="bg-[#0C513F] p-6 box-border rounded-lg-lg text-2xl text-white flex font-bold w-[500px]">
                   <span src={chowFounder}></span>Founder's Story
                 </p>
@@ -18,11 +22,20 @@ const ChowdeckPort2 = () => {
                   src={chowOwner}
                   className="mt-14 mx-14 h-[500px] w-[400px] "
                 />
+
+                <div>
+                  <h2 className="mx-32 mt-6 text-2xl font-normal">
+                    Babafemi Aluko
+                  </h2>
+                  <p className="mx-28 text-green-950 font-semibold tracking-[0.2em]">
+                    CEO / CO-FOUNDER
+                  </p>
+                </div>
               </div>
 
               {/* <span className="mt-32 h-[1900px] w-[2400px]"></span> */}
 
-              <span className="">
+              <span className=" text-[18px] mt-3">
                 <p>
                   I tested positive for COVID on the 31st of December, 2020. The
                   result came in very late at night and I couldn’t travel home.
@@ -67,19 +80,15 @@ const ChowdeckPort2 = () => {
                 </p>
               </span>
             </div>
-
-            {/* <div className="border-black outline flex border-solid-9 border-r-4"></div> */}
-
-            <div>
-              <h2 className="mx-32 mt-6 text-2xl font-normal">
-                Babafemi Aluko
-              </h2>
-              <p className="mx-28 text-green-950 font-semibold tracking-[0.2em]">
-                CEO / CO-FOUNDER
-              </p>
-            </div>
           </span>
         </div>
+        <div className="border-black border-4 h-44 rounded-b-lg">
+          <span className="font-bold mt-52">BACKED BY</span>
+          <span className="flex grayscale mt-12 justify-center">
+              <img src={combinator} style={{height: "43px", width: "150px"}}/>
+              <img src={hoaq} style={{height: "53px", width: "150px"}}/>
+          </span>
+          </div>
       </div>
     </div>
   );
