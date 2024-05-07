@@ -1,6 +1,5 @@
 import { lgItems } from "../../utils/ListItems";
 import { useState } from 'react';
-import { Link } from "react-router-dom";
 
 
 const LgMenuList = () => {
@@ -19,7 +18,7 @@ const LgMenuList = () => {
                             className={`lg:text-base lg:font-semibold ${activeIndex === index ? 'text-yellow-500' : ''}`}
                             onClick={() => handleActive(index)}
                         >
-                            <Link to={`/${item.text.toLowerCase()}`}>{item.text}</Link>
+                            <a href="">{item.text}</a>
                         </li>
                     ))}
             </ul>
