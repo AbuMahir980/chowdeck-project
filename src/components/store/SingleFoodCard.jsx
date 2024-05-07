@@ -20,26 +20,21 @@ console.log('food:', food)
   }
   return (
     <>
-      <div className="flex justify-center">
+      <div className="flex justify-center p-4">
         <div className="">
           <div className="rounded-lg overflow-hidden h-[250px]  relative">
             <img src={data.image} alt="" className=" " />
             <div className="absolute bottom-3 left-3 space-x-2 flex">
-                
-
-                    <CustomButton image={blackClock} text ='51-61 mins'/>
-
-                    
-                    <CustomButton image={orderIcon} text ='Pre-order'/>
-            
+                    <CustomButton image={blackClock} text ='51-61 mins'/> 
+                    <CustomButton image={orderIcon} text ='Pre-order'/> 
             </div>
            
           </div>
         
 
-          <div className="flex  mt-6 justify-between">
-            <div className="w-[208px] h-[72px]">
-              <h1 className="font-bold text-xl leading-[36px]">
+          <div className="block md:flex  mt-6 md:justify-between">
+            <div className="w-[104px] h-[35px] md:w-[208px] md:h-[72px]">
+              <h1 className="font-medium text-xl md:text-[28px] mr-4 leading-[36px]">
                 {data.name}
               </h1>
             </div>
@@ -48,7 +43,7 @@ console.log('food:', food)
             </div>
           
 
-            <div className="flex items-start border border-[#0c513f] p-[0.5rem] rounded-xl bg-[#e6f7f1]">
+            <div className="flex items-start border border-[#0c513f] p-[0.5rem] rounded-xl bg-[#e6f7f1] mb-16">
                 <Button onClick={()=>{handleClick(1)}} isactive={isactive} text='Deliver now' cond={1} />
                 <Button onClick={()=>{handleClick(2)}} isactive={isactive} text='Pre-order' cond={2}/>
                 <Button onClick={()=>{handleClick(3)}} isactive={isactive} text='Pick-up' cond={3}/>
