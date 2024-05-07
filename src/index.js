@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './styles/index.css';
@@ -19,20 +19,10 @@ import LogInCard from './components/storeComponents/LogInCard';
 import VerifyOtp from './pages/verfiyOtp/VerifyOtp';
 import AddToCartCard from './components/addtocart/AddToCartCard';
 import { ToastContainer, toast } from 'react-toastify';
-  import 'react-toastify/dist/ReactToastify.css';
-=======
-import React from "react";
-import ReactDOM from "react-dom/client";
-import "./styles/index.css";
-
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Navbar from "./shared/Navbar";
-// import NavList from './shared/components/NavList';
-import LgMenuList from "./shared/components/LgMenuList";
+import 'react-toastify/dist/ReactToastify.css';
 import Company from "./components/companyComponents/Company";
 import MyOrders from "./components/companyComponents/MyOrders";
-import Card from "./components/companyComponents/Card";
->>>>>>> origin/lymyn
+import Card from "./components/vendorComponents/Card";
 // import reportWebVitals from './reportWebVitals';
 
 const router = createBrowserRouter([
@@ -69,6 +59,10 @@ const router = createBrowserRouter([
     element: <Blog  />
   },
   {
+    path:'/company' ,
+    element: <Company  />
+  },
+  {
     path: '/signup',
     element: <SignUpCard/> 
   },
@@ -87,12 +81,8 @@ const router = createBrowserRouter([
 
 
 ]);
-<<<<<<< HEAD
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-=======
-const root = ReactDOM.createRoot(document.getElementById("root"));
->>>>>>> origin/lymyn
 root.render(
   <React.StrictMode>
     
