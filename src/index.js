@@ -12,7 +12,7 @@ import Riders from './riders/Riders';
 import Vendors from './pages/vendors/Vendors';
 import FAQS from './pages/faq/Faq';
 import Blog from './pages/blog/Blog';
-import Store from './pages/store/Store';
+import Store from './pages/store/components/StoreNAv';
 import SignUpCard from './components/storeComponents/SignUpCard';
 import LogInCard from './components/storeComponents/LogInCard';
 import VerifyOtp from './pages/verfiyOtp/VerifyOtp';

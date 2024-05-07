@@ -7,7 +7,7 @@ import { IoCartOutline } from "react-icons/io5";
 import { CiUser } from "react-icons/ci";
 
 
-import AddressModal from "../../components/BlogComponents/AddressModal";
+import AddressModal from "../../../components/BlogComponents/AddressModal";
 
 const Index = () => {
   const [showAddressModal, setShowAddressModal] = useState(false);

@@ -5,6 +5,7 @@ import { useState } from 'react';
 import NavList from './components/NavList';
 import BrandLogo from './components/BrandLogo';
 import LgMenuList from './components/LgMenuList';
+import { Link } from "react-router-dom";
 
 
 const Navbar = () => {
@@ -24,9 +25,10 @@ const Navbar = () => {
             
                 <div className='flex gap-3'>
                     {/* <Client /> */}
-                    <a href="" className='bg-white rounded-full p-3'>
-                        <img src={shoppingCart} alt="" />
-                    </a>
+                    
+                    <Link to="/store" className='bg-white rounded-full p-3'>
+                        <img src={shoppingCart} alt="Shopping Cart" />
+                    </Link>
                     <div className='lg:hidden'>
                         <button className='pb-3 bg-[#0c513f] rounded-full p-3 ' onClick={toggleMenu}>
                             <img src={hamburger} alt="" />
