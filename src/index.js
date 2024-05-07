@@ -11,6 +11,7 @@ import Navbar from './shared/Navbar';
 import Riders from './riders/Riders';
 import Vendors from './pages/vendors/Vendors';
 import Card from './riders/storeComponent/Card.';
+import SecondCard from './riders/storeComponent/SecondCard';
 
 // import reportWebVitals from './reportWebVitals';
 
@@ -33,9 +34,13 @@ const router = createBrowserRouter([
     element: <Riders />
   },
   {
-    path: '/card',
+    path: '/card1',
     element: <Card />
   },
+  {
+    path: '/card2',
+    element: <SecondCard />
+  }
   
   
 ]);
