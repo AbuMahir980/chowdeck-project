@@ -10,16 +10,8 @@ import { cards } from './cards'
 import cardThree from '../../components/relayComponents/relayAssets/cardThree.svg'
 import cardTwo from '../../components/relayComponents/relayAssets/cardTwo.svg'
 import cardOne from '../../components/relayComponents/relayAssets/cardOne.svg'
-import batonReceiver from '../../components/relayComponents/relayAssets/batonReceiver.svg'
-import batonGiver from '../../components/relayComponents/relayAssets/batonGiver.svg'
-import boxCarrier from '../../components/relayComponents/relayAssets/boxCarrier.svg'
 import manPackage from '../../components/relayComponents/relayAssets/manPackage.svg'
-import starLike from '../../components/relayComponents/relayAssets/starLike.svg'
 import AutoPlay from './slider/AutoPlay'
-import pearl from '../../components/relayComponents/relayAssets/pearl.svg'
-import halfMoon from '../../components/relayComponents/relayAssets/halfMoon.svg'
-import star from '../../components/relayComponents/relayAssets/star.svg'
-import AnotherAutoplay from './slider/AnotherAutoplay'
 import Pasta from '../relayComponents/relayAssets/Pasta.svg'
 
 
@@ -55,75 +47,12 @@ const Relay = () => {
 </div>
 
 <h3 className='font-sans font-medium pl-5 mt-20 md:mt-8 lg:mt-28 text-2xl md:text-[64px] md:font-bold'>How Relay Works</h3>
-{/* <div className='flex flex-row mt-20 space-x-10 items-center'>
-      <div  className='w-[15%] bg-[pink] h-[30vh]'>
-      <h2>first card</h2>
-    </div>
-    <div className='flex flex-row w-[70%] bg-[blue] h-[60vh]'>
-      <div className='w-[50%]'>
-      <h2>second card</h2>
-      </div>
-      <div className='w-[50%] bg-[red] '>
-      <h2>extra</h2>
-      </div>
-      
-    
-    </div>
-    <div className='w-[15%] bg-[green] h-[30vh]'>
-      <h2>third card</h2>
-    </div>
-</div> */}
+
 <div className="mt-24 ">
 <Carousel cards={cards} interval={3000} />
 </div>
 
-{/* <div style={{ backgroundColor: 'rgb(153, 0, 56)' }} className='mt-20 relative z-30 flex flex-col justify-center items-center lg:mb-[50px] min-h-[200px] lg:min-h-[500px]'>
-<h3 className=' text-white text-center text-5xl font-bold leading-[48px] not-italic pt-24 mb-20'>
-  <span className='text-[pink]'>You need it?</span> <br />
-  We'll bring it!
-</h3>
-<div style={{ translate: 'none', rotate: 'none', scale: 'none', transform: 'translate(0px, 0px)'}}>
-  <div style={{boxSizing:'border-box', display:'block', overflow:'hidden', width:'initial', height:'initial', background:'none', opacity:'1',border:'0',padding:'0',margin:'0', position:'absolute', inset:'0'}}>
-    <img src={cardThree} alt="" className='absolute transform rotate-3 z-3'/>
-  </div>
-</div>
-<div >
-  <div>
-    <img src={cardTwo} alt="" className='absolute transform z-2'/>
-  </div>
-</div>
-<div>
-  <div>
-    <img src={cardOne} alt="" className='absolute  transform -rotate-3 z-1'/>
-  </div>
-</div>
-</div> */}
 
-
-{/* <div style={{ backgroundColor: 'rgb(153, 0, 56)' }}>
-<div  className='mt-20'>
-<h3 className=' text-white text-center text-5xl font-bold leading-[48px] not-italic pt-24 mb-20'>
-  <span className='text-[pink]'>You need it?</span> <br />
-  We'll bring it!
-</h3>
-</div>
-
-<div>
-  <div>
-    <img src={cardThree} alt="" className='absolute transform rotate-3 z-3'/>
-  </div>
-</div>
-<div >
-  <div>
-    <img src={cardTwo} alt="" className='absolute transform z-2'/>
-  </div>
-</div>
-<div>
-  <div>
-    <img src={cardOne} alt="" className='absolute  transform -rotate-3 z-1'/>
-  </div>
-</div>
-</div> */}
 
 <div style={{ backgroundColor: 'rgb(153, 0, 56)' }} className='h-[30rem] lg:h-[60rem]'>
   <div  className='mt-20'>
@@ -150,22 +79,6 @@ const Relay = () => {
 </div>
 </div>
 
-{/* batons */}
-{/* <div className='relative w-full'>
-  <div className='abolute  w-[50%] -m-[10rem]'>
-    <img src={batonReceiver} alt="" />
-  </div>
-
-  <div  className='abolute right-[-20px] w-[50%]'>
-    <img src={batonGiver} alt="" />
-  </div>
-</div> */}
-
-
- {/* <div className='background_containersse relative'>
-        <img src={batonReceiver} alt="baton receiver" className='absolute left-0 top-0 w-full h-full' />
-        <img src={batonGiver} alt="baton giver" className='absolute right-0 bottom-0 w-full h-full' />
-      </div> */}
 
 <div className='mx-auto px-[1rem] pt-16'  style={{ backgroundColor: 'rgb(153, 0, 56)' }}>
 <div className="grid lg:grid-cols-2 lg:gap-32"  >
@@ -183,62 +96,10 @@ const Relay = () => {
 </div>
 
 
-{/* MARQUEE */}
 
-{/* <marquee width="100%" direction="left" height="100px">
-<div className="flex">
-<div className='flex w-[16rem] gap-2 rounded border-blue-500' >
-  <img src={starLike} alt="" />
-  <h2>Live updates on deliveries</h2>
-</div>
-<div className='flex w-[16rem] gap-2 rounded border-blue-500' >
-  <img src={starLike} alt="" />
-  <h2>Live updates on deliveries</h2>
-</div>
-<div className='flex w-[16rem] gap-2 rounded border-blue-500' >
-  <img src={starLike} alt="" />
-  <h2>Live updates on deliveries</h2>
-</div>
-<div className='flex w-[16rem] gap-2 rounded border-blue-500' >
-  <img src={starLike} alt="" />
-  <h2>Live updates on deliveries</h2>
-</div>
-</div>
-</marquee> */}
 
 <div style={{ backgroundColor: 'rgb(153, 0, 56)' }}>
-{/* <AnotherAutoplay/> */}
-{/* <marquee behavior="scroll" direction="left">
-<div className="flex justify-between marquee-container ">
-  <div className='marquee-item'>
-  <div className='flex w-[18rem] items-center justify-center gap-2 rounded bg-[#a31a4c] text-[#e1b5c4]' >
-  <img src={starLike} alt=""  style={{ fill: '#8c77ec' }} />
-  <h2 className='text-base font-semibold' >Live updates on deliveries</h2>
-</div>
-  </div>
 
-<div className='marquee-item'>
-<div className='flex w-[18rem] items-center justify-center gap-2 rounded bg-[#a31a4c] text-[#e1b5c4]' >
-  <img src={pearl} alt=""  style={{ fill: '#8c77ec' }} />
-  <h2 className='text-base font-semibold' style={{border:'5px red'}}>Highly-rated and vetted riders</h2>
-</div>
-</div>
-
-<div className='marquee-item'>
-<div className='flex w-[18rem] items-center justify-center gap-2 rounded bg-[#a31a4c] text-[#e1b5c4]' >
-  <img src={halfMoon} alt=""  style={{ fill: '#8c77ec' }} />
-  <h2 className='text-base font-semibold' style={{border:'5px red'}}>24/7 support for customers</h2>
-</div>
-</div>
-
-<div className='marquee-item'>
-<div className='flex w-[18rem] items-center justify-center gap-2 rounded bg-[#a31a4c] text-[#e1b5c4]' >
-  <img src={star} alt=""  style={{ fill: '#8c77ec' }} />
-  <h2 className='text-base font-semibold' style={{border:'5px red'}}>Quick and easy onboarding</h2>
-</div>
-</div>
-</div>
-</marquee> */}
 <AutoPlay/>
 </div>
 

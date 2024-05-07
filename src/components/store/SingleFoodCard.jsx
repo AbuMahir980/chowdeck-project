@@ -20,22 +20,16 @@ console.log('food:', food)
   }
   return (
     <>
-      <div className="w-full">
-        <div className="w-[50%]">
+      <div className="flex justify-center">
+        <div className="">
           <div className="rounded-lg overflow-hidden h-[250px]  relative">
             <img src={data.image} alt="" className=" " />
             <div className="absolute bottom-3 left-3 space-x-2 flex">
-                {/* <div className="flex border border-[#0c513f] w-[8rem] rounded-[0.5rem] bg-[#ececec]">
-                    <img src={blackClock} alt="" className="" />
-                    <button className="text-[#517c71]">51-61 mins</button>
-                    </div> */}
+                
 
                     <CustomButton image={blackClock} text ='51-61 mins'/>
 
-                    {/* <div className="flex border border-[#0c513f] w-[8rem] rounded-[0.5rem] bg-[#ececec]">
-                        <img src={orderIcon} alt="" className="bg-[#ebebeb]  " />
-                    <button className="text-[#517c71]">Pre-order</button>
-                    </div> */}
+                    
                     <CustomButton image={orderIcon} text ='Pre-order'/>
             
             </div>
