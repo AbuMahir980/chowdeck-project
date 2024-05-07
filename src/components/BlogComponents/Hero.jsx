@@ -1,5 +1,5 @@
 import React from "react";
-import { scrollingCard } from "../utils/blog";
+import { scrollingCard } from "../../utils/blog";
 import HeroCards from "./HeroCards";
 
 const Hero = () => {

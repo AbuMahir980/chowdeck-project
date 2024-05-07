@@ -1,5 +1,5 @@
 import React from "react";
-import arrowlike from "../assets/bike.svg";
+import arrowlike from "..//../assets//bike.svg";
 
 const Press = ({ content, image, link }) => {
   return (

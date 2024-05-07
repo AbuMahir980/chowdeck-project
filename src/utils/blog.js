@@ -14,7 +14,7 @@ import fy from "../assets/my_assets/fryday.jpg"
 export const pressDetails = [
   {
     content: "Our 11 favorite companies from YC ‘s S22 Demo Day: Part 1",
-    image: fy,
+    image: rl,
     link: "https://techcrunch.com/2022/09/07/11-favorite-yc-demo-day-s22-startups/?guccounter=1",
   },
   {

@@ -1,9 +1,9 @@
 import React from "react";
 import { cardRendering, pressDetails } from "../../utils/blog";
-import Press from "../../components/Press";
-import OtherCards from "../../components/Cards";
-import Hero from "../../components/Hero";
-import Select from "../../components/Select";
+import Press from "..//../components/BlogComponents/Press";
+import OtherCards from "..//../components/BlogComponents/Cards";
+import Hero from "..//../components/BlogComponents/Hero";
+import Select from "..//../components/BlogComponents/Select";
 
 
 const KoboskyBlog = () => {
