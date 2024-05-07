@@ -9,7 +9,7 @@ module.exports = {
       },
       backgroundImage:{
         'bgImage':"url('/src/assets/customersImg/customerHerobg.svg')",
-        'hero': "url('/src/assets/vendors/hero.svg')"
+        'hero': "url('/src/assets/vendors/hero.svg')",
       } 
     },
   },

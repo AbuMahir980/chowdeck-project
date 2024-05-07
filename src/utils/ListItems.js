@@ -26,6 +26,13 @@ import scenes from '../assets/vendors/networks/scenes.webp';
 import Founders from '../assets/vendors/stories/ceos.jpg';
 import Kfc from '../assets/vendors/stories/KFC.png';
 import Relay from '../assets/vendors/stories/Relay.png';
+// import restaurant from "../../assets/chowdeck/restaurant.webp";
+import restaurant from "../assets/chowdeck/restaurant.webp";
+import supermarkets from "../assets/chowdeck/supermarkets.webp";
+import pharmacy from "../assets/chowdeck/pharmacy.svg";
+import africanMeal from "../assets/chowdeck/African Meals.webp";
+import fitFam from "../assets/chowdeck/fitfam.png";
+import drinks from "../assets/chowdeck/drink.png";
 
 export const items = [
         { text: 'Customers', icon: parcel},
@@ -96,3 +103,43 @@ export const storiesData = [
         btnText:"Read More"
     }
 ]
+
+
+export const categoryData = [
+        {
+            id: 1,
+            image: restaurant,
+            text: "Restaurant",
+            background: "#ffaac940"
+        },
+        {
+            id: 2,
+            image: supermarkets,
+            text: "Supermarkets",
+            background: "#fff3ed"
+        },
+        {
+            id: 3,
+            image: pharmacy,
+            text: "Pharmacy",
+            background: "#ebf4ff"
+        },
+        {
+            id: 4,
+            image: africanMeal,
+            text: "African Meal",
+            background: "#fff8e4"
+        },
+        {
+            id: 5,
+            image: fitFam,
+            text: "Fit Fam",
+            background: "#daefe3"
+        },
+        {
+            id: 6,
+            image: drinks,
+            text: "Drinks",
+            background: "#fff8e4"
+        },
+    ];
