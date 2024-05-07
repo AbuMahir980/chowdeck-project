@@ -8,7 +8,7 @@ import Navbar from "./shared/Navbar";
 import LgMenuList from "./shared/components/LgMenuList";
 import Company from "./components/companyComponents/Company";
 import MyOrders from "./components/companyComponents/MyOrders";
-import Cards from "./components/vendorComponents/Cards";
+import Cards from "./components/companyComponents/Cards";
 // import reportWebVitals from './reportWebVitals';
 
 const router = createBrowserRouter([
