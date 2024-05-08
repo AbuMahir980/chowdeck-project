@@ -17,10 +17,10 @@ const SecondCard = () => {
                         
                         <img src={data.image} alt="" className='w-24 flex items-center'/>
                         <div className="flex flex-col justify-center   items-center ">
-                        <h1>{data.text1}</h1>
+                        <h1 className='text-[#9ca3af]'>{data.text1}</h1>
                         
                         
-                        <h1 className=''>{data.text2}</h1>
+                        <h1 className='text-[#9ca3af]'>{data.text2}</h1>
                         </div>
                     </div>)
  } )}
