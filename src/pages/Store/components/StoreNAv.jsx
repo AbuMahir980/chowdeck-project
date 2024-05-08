@@ -8,12 +8,19 @@ import { CiUser } from "react-icons/ci";
 
 
 import AddressModal from "../../../components/BlogComponents/AddressModal";
+import LogInCard from "../../../components/storeComponents/LogInCard";
 
 const Index = () => {
   const [showAddressModal, setShowAddressModal] = useState(false);
   const handleEnterAddress = () => {
     setShowAddressModal(true);
   };
+
+  const [isOpen, setIsOpen] = useState(false);
+
+    const toggleMenu = () => {
+        setIsOpen(!isOpen);
+    };
   return (
     
     <div className="px-16 py-4 flex justify-between items-center">
@@ -45,8 +52,9 @@ const Index = () => {
           <div className="bg-green-700 p-3 text-white rounded-full max-w-max" >
           <IoCartOutline />
           </div>
-          <div className="bg-green-700 p-3 text-white rounded-full max-w-max" >
+          <div className="bg-green-700 p-3 text-white rounded-full max-w-max" onClick={toggleMenu} >
           <CiUser />
+          {isOpen && <LogInCard onClose={() => setIsOpen(false)}/>}
           </div>
         
 
