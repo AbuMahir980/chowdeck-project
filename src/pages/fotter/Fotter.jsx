@@ -5,7 +5,7 @@ import chowlogo from "../../assets/selim/chowlogo.webp"
 const Fotter = () => {
     return (
         <>
-        <div className="bg-[#ffff] text-black w-full flex justify-evenly p-20">
+        <div className="bg-[#ffff] text-black w-full flex justify-evenly px-6 mt-20">
             <div className="w-[50%]">
             <img src={chowlogo} alt="" />
             </div>
@@ -33,7 +33,8 @@ const Fotter = () => {
 
             </div>
         </div>
-        <div className="px-20 py-10 border-t-2 border-[#bbbbbc] w-full"><span className="text-[#bbbbbc]">© 2022, Chowdeck.</span></div>
+        <div className="px-20 py-5 w-full  border-t-2 border-[#bbbbbc] border-opacity-25"><span className="text-[#bbbbbc] ">© 2022, Chowdeck.</span></div>
+        {/* border-t-2 border-[#bbbbbc] border-opacity-25 */}
         </>
 
     )

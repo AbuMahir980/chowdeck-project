@@ -5,12 +5,12 @@ const Card = ({loveIcon,image,name,clock,time, route}) => {
   return (
     <>
     <Link to={route}>
-      <div className='w-[20rem] rounded-lg  bg-[white] cursor-pointer hover:shadow-md'>
+      <div className='w-full rounded-lg  bg-[white] cursor-pointer hover:shadow-md'>
         <div className='p-2 relative'>
             <div className='absolute left-[21px] top-[12px] bg-[#ffc501] rounded-full w-[32px] h-[32px] flex justify-center'>
                 <img src={loveIcon} alt="" className='w-8'/>
                 </div>
-            <img src={image} alt="" className='w-[366px] h-[160px] overflow-hidden rounded-lg' />
+            <img src={image} alt="" className='w-full h-[160px] overflow-hidden rounded-lg' />
         </div>
         <div className='py-3 pl-2'>
             <h3 className='text-lg font-medium'>{name}</h3>

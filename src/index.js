@@ -23,6 +23,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import Company from "./components/companyComponents/Company";
 import MyOrders from "./components/companyComponents/MyOrders";
 import Card from "./components/vendorComponents/Card";
+import SingleFoodCard from './components/store/SingleFoodCard';
 // import reportWebVitals from './reportWebVitals';
 
 const router = createBrowserRouter([
@@ -77,6 +78,10 @@ const router = createBrowserRouter([
   {
     path: '/addtocart',
     element: <AddToCartCard />
+  },
+  {
+    path: '/singlefoodcard/:id',
+    element: <SingleFoodCard />
   }
 
 
@@ -85,7 +90,6 @@ const router = createBrowserRouter([
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    
       <RouterProvider router={router} />
       <ToastContainer />
   </React.StrictMode>
