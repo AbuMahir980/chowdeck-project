@@ -6,6 +6,7 @@ import orderIcon from '../relayComponents/relayAssets/orderIcon.png'
 import blackClock from '../relayComponents/relayAssets/blackClock.png'
 import CustomButton from "./storeButton/CustomButton";
 import { food } from "./data";
+import Layout from '../../pages/store/Layout'
 
 const SingleFoodCard = () => {
     // console.log('food:', food)
@@ -19,8 +20,8 @@ const SingleFoodCard = () => {
         setIsactive(isactive)
       }
       return (
-        <>
-          <div className="flex justify-center p-4">
+        <Layout>
+          <div className="flex px-6">
             <div className="">
               <div className="rounded-lg overflow-hidden h-[250px]  relative">
                 <img src={data.image} alt="" className=" " />
@@ -51,7 +52,7 @@ const SingleFoodCard = () => {
               </div>
             </div>
           </div>
-        </>
+        </Layout>
       );
 };
 
