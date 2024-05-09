@@ -3,7 +3,7 @@ import { datas } from '.'
 import CardItem from './CardItem'
 const Card = () => {
   return (
-    <div className='grid grid-cols-2 gap-5 w-[50%]'>
+    <div className='grid grid-cols-2 gap-5 w-full'>
         {
             datas.map((data, i) => (<CardItem key={i} {...data} />))
         }

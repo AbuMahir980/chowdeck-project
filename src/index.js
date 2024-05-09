@@ -24,7 +24,7 @@ import Company from "./components/companyComponents/Company";
 // import MyOrders from "./components/companyComponents/MyOrders";
 // import Card from "./components/vendorComponents/Card";
 import SingleFoodCard from './components/store/SingleFoodCard';
-import Card from './riders/storeComponent/Card.';
+import Card from './riders/storeComponent/Card';
 import SecondCard from './riders/storeComponent/SecondCard';
 
 // import reportWebVitals from './reportWebVitals';
