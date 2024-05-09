@@ -8,6 +8,7 @@ import appStore from '../../assets/vendors/appStore.svg';
 import downArrow from '../../assets/vendors/networks/downArrow.svg';
 import Card from '../../components/vendorComponents/Card';
 import { networks } from '../../utils/ListItems';
+import AutoPlay from '../../components/vendorComponents/carousel';
 
 
 
@@ -25,6 +26,7 @@ const Vendors = () => {
                     <Buttons img={playStore} bgColor="bg-black" text="Download on Google Play" width="w-72" height="h-16" textWeight="font-medium" textSize="text-base"/>
                     <Buttons img={appStore} bgColor="bg-black" text="Download on App Store" width="w-72" height="h-16" textWeight="font-medium" textSize="text-base"/>
                 </div>
+                
                 <div className='mb-10'></div>
                 <div className='mb-10'></div>
                 <div className='mb-10'></div>
@@ -33,6 +35,9 @@ const Vendors = () => {
                 <div className='mb-10'></div>
                 <div className='mb-10'></div>
                 <div className='mb-10'></div>
+                <div className='bg-green absolute top-[1000px]'>
+                    <AutoPlay />
+                </div>
             </div>
             <div className='flex flex-col justify-center items-center'>
                 <div className='mb-10'></div>
