@@ -26,18 +26,18 @@ const Vendors = () => {
                     <Buttons img={playStore} bgColor="bg-black" text="Download on Google Play" width="w-72" height="h-16" textWeight="font-medium" textSize="text-base"/>
                     <Buttons img={appStore} bgColor="bg-black" text="Download on App Store" width="w-72" height="h-16" textWeight="font-medium" textSize="text-base"/>
                 </div>
+                {/* <div className='bg-green absolute top-10'>
+                    <AutoPlay />    
+                </div> */}
+                <div className='mb-10'></div>
+                <div className='mb-10'></div>
+                <div className='mb-10'></div>
+                <div className='mb-10'></div>
+                <div className='mb-10'></div>
+                <div className='mb-10'></div>
+                <div className='mb-10'></div>
+                <div className='mb-10'></div>
                 
-                <div className='mb-10'></div>
-                <div className='mb-10'></div>
-                <div className='mb-10'></div>
-                <div className='mb-10'></div>
-                <div className='mb-10'></div>
-                <div className='mb-10'></div>
-                <div className='mb-10'></div>
-                <div className='mb-10'></div>
-                <div className='bg-green absolute top-[1000px]'>
-                    <AutoPlay />
-                </div>
             </div>
             <div className='flex flex-col justify-center items-center'>
                 <div className='mb-10'></div>
@@ -70,6 +70,7 @@ const Vendors = () => {
                 <Community />
             </div>
                 <Story />
+            
         </div>
     ); 
 

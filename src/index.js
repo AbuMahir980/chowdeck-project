@@ -26,6 +26,7 @@ import Company from "./components/companyComponents/Company";
 import SingleFoodCard from './components/store/SingleFoodCard';
 import Card from './riders/storeComponent/Card';
 import SecondCard from './riders/storeComponent/SecondCard';
+import AutoPlay from './components/vendorComponents/carousel';
 
 // import reportWebVitals from './reportWebVitals';
 
@@ -85,6 +86,10 @@ const router = createBrowserRouter([
   {
     path: '/singlefoodcard/:id',
     element: <SingleFoodCard />
+  },
+  {
+    path: '/autoplay',
+    element: <AutoPlay />
   }
   
 ]);
