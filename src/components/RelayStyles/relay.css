@@ -1,3 +1,10 @@
+
+body {
+    overflow-x: hidden;
+  }
+  
+
+
 .background_container {
     background-image: url('../../components/relayComponents/relayAssets/relaybackgrooundone.svg');
     background-size: cover;

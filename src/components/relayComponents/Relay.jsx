@@ -13,11 +13,22 @@ import cardOne from '../../components/relayComponents/relayAssets/cardOne.svg'
 import manPackage from '../../components/relayComponents/relayAssets/manPackage.svg'
 import AutoPlay from './slider/AutoPlay'
 import Pasta from '../relayComponents/relayAssets/Pasta.svg'
+import founders from '../relayComponents/relayAssets/founders.jpg'
+import helloFryday from '../relayComponents/relayAssets/helloFryday.png'
+import introducingRelay from '../relayComponents/relayAssets/introducingRelay.png'
+import kFCThumbnail from '../relayComponents/relayAssets/kFCThumbnail.png'
 
 
 
 
 const Relay = () => {
+
+  // const text = 'we have secured $2.5 million in seed funding to optimize our operations and support expansion into more cities across the'
+  // const indexOfThe = text.indexOf('the')
+  // console.log('index:', indexOfThe)
+
+  // const truncatedText = text.substring(0, indexOfThe) + '...'
+  // console.log(truncatedText)
 
 
   return (
@@ -107,6 +118,73 @@ const Relay = () => {
 <p>Stories</p>
 <img src={Pasta} alt="" />
 </div>
+
+<div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 w-full mx-4'>
+<div className='border-4 border-black rounded-xl overflow-hidden'>
+  {/* first card */}
+  <div className='w-full'>
+  <img src={founders} alt="" />
+  </div>
+ 
+ <div className='text-sm font-bold mt-5 text-center w-full'>
+  <p>CHOWDECK SECURES $2.5 MILLION SEED FUNDING TO OPTIMIZE ON-DEMAND FOOD DELIVERY IN NIGERIA</p>
+  </div>
+  <div className='font-medium text-lg text-center mt-5 leading-6 sm:w-[150px] md:w-[315px] md:h-[70px] lg:w-[300px] xl:w-[350px]  lg:h-[100px]  px-4 overflow-hidden'>
+  <p className=''>We have secured $2.5 million in seed funding to optimize our operations and support expansion into more cities across</p>
+    {/* <p className=''>{truncatedText}</p> */}
+  </div>
+
+  <div className='w-72 sm:w-72 h-12 bg-[#f3f6f5] hover:bg-[#0c513f] hover:text-[white] text-center mx-auto mb-4 overflow-hidden rounded-lg'>
+  <button className='py-3'>
+    <a href="#">Read More</a>
+  </button>
+  </div>
+</div>
+
+{/* second card */}
+<div className='border-4 border-black rounded-xl overflow-hidden'>
+  <div className='w-full object-cover  '>
+  {/* <img src={helloFryday} alt="" /> */}
+  <img src={kFCThumbnail} alt="" />
+  </div>
+ 
+ <div className='text-sm font-bold mt-5 text-center w-full'>
+  <p>THE ECOSYSTEM MEETS KFC</p>
+  </div>
+  <div className='mt-5'>
+    <p>We're thrilled to welcome KFC to our ever-evolving ecosystem!</p>
+  </div>
+
+  <div className='w-56 h-12 bg-[#f3f6f5] hover:bg-[#0c513f] hover:text-[white] text-center mx-auto overflow-hidden rounded-lg'>
+  <button  className='py-3 w-[263px]'>
+    <a href="">Read more</a>
+  </button>
+  </div>
+</div>
+
+
+  {/* third card */}
+  <div className='border-4 border-black rounded-xl overflow-hidden'>
+  <div className=''>
+  <img src={introducingRelay} alt="" />
+  </div>
+ 
+ <div>
+  <p className=''>CHOWDECK SECURES $2.5 MILLION SEED FUNDING TO OPTIMIZE ON-DEMAND FOOD DELIVERY IN NIGERIA</p>
+  </div>
+  <div>
+    <p>we have secured $2.5 million in seed funding to optimize our operations and support expansion into more cities across the</p>
+  </div>
+
+  <div>
+  <button>
+    <a href=""></a>
+  </button>
+  </div>
+</div>
+</div>
+
+
 
 
 
