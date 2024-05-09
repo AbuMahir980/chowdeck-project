@@ -21,9 +21,12 @@ import AddToCartCard from './components/addtocart/AddToCartCard';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Company from "./components/companyComponents/Company";
-import MyOrders from "./components/companyComponents/MyOrders";
-import Card from "./components/vendorComponents/Card";
+// import MyOrders from "./components/companyComponents/MyOrders";
+// import Card from "./components/vendorComponents/Card";
 import SingleFoodCard from './components/store/SingleFoodCard';
+import Card from './riders/storeComponent/Card.';
+import SecondCard from './riders/storeComponent/SecondCard';
+
 // import reportWebVitals from './reportWebVitals';
 
 const router = createBrowserRouter([
@@ -82,9 +85,16 @@ const router = createBrowserRouter([
   {
     path: '/singlefoodcard/:id',
     element: <SingleFoodCard />
+  },
+  {
+    path: '/card1',
+    element: <Card />
+  },
+  {
+    path: '/card2',
+    element: <SecondCard />
   }
-
-
+  
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
