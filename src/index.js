@@ -86,14 +86,14 @@ const router = createBrowserRouter([
     path: '/singlefoodcard/:id',
     element: <SingleFoodCard />
   },
-  {
-    path: '/card1',
-    element: <Card />
-  },
-  {
-    path: '/card2',
-    element: <SecondCard />
-  }
+  // {
+  //   path: '/card1',
+  //   element: <Card />
+  // },
+  // {
+  //   path: '/card2',
+  //   element: <SecondCard />
+  // }
   
 ]);
 
