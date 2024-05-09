@@ -12,6 +12,7 @@ import LgMenuList from './shared/components/LgMenuList';
 import FAQS from './pages/faq/Faq'
 import Fotter from './pages/fotter/Fotter';
 import Checkout from './pages/checkout/Checkout';
+import Footer from './shared/footer/footer';
 // import reportWebVitals from './reportWebVitals';
 
 
@@ -39,6 +40,10 @@ const router = createBrowserRouter([
   {
     path: '/Checkout',
     element: <Checkout />
+  },
+  {
+    path: '/footer',
+    element: <Footer />
   },
 ]);
 const root = ReactDOM.createRoot(document.getElementById('root'));
