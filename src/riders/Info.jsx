@@ -1,6 +1,6 @@
-import bikeCard from '../assets/far assets1/unlocknewlevelsofgrowth.png'
-import metricesLogo from '../assets/far assets1/metrices.png'
-import unlockLogo from '../assets/far assets1/unlocknewlevelsofgrowth.png'
+import bikeCard from '../assets/farAssets1/unlocknewlevelsofgrowth.png'
+import metricesLogo from '../assets/farAssets1/metrices.png'
+import unlockLogo from '../assets/farAssets1/unlocknewlevelsofgrowth.png'
 // import metrisLogo from '../assets/far assets1/metrices.png'
 import InfoCard from './infoCard'
 

@@ -5,7 +5,7 @@ const SecondCard = () => {
     return (
         <div className='border-[1px] border-[#b3b2b2] rounded-sm w-[40rem] h-[30rem] flex justify-center items-center '>
             <div>
-                {/* {datas.map((data, i) => (
+                {/* {datas.map((data, i) => {
                     <div key={i}>
                         <img src={data.image} alt="" />
                         <h1>{data.text1}</h1>
