@@ -7,7 +7,6 @@ const Card = () => {
         {
             datas.map((data, i) => (<CardItem key={i} {...data} />))
         }
-      
     </div>
   )
 }

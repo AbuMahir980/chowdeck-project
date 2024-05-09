@@ -8,6 +8,7 @@ import CustomButton from "./storeButton/CustomButton";
 import { food } from "./data";
 import Layout from '../../pages/store/Layout'
 import Card from "../../riders/storeComponent/Card";
+import Checkout from "../../pages/checkout/Checkout"
 
 const SingleFoodCard = () => {
     // console.log('food:', food)
@@ -22,8 +23,8 @@ const SingleFoodCard = () => {
       }
       return (
         <Layout>
-          <div className="flex flex-col px-4">
-            <div className="w-[70%] px-4">
+          <div className="flex px-4">
+            <div className="flex flex-col w-[60%] px-4">
               <div className="rounded-lg overflow-hidden h-[250px] w-full relative">
                 <img src={data.image} alt="" className="w-full" />
                 <div className="absolute bottom-3 left-3 space-x-2 flex">
@@ -49,7 +50,9 @@ const SingleFoodCard = () => {
               </div>
               <Card />
             </div>
-            
+            <div className="w-[40%]">
+              <Checkout />
+            </div>
           </div>
         </Layout>
       );
