@@ -12,7 +12,7 @@ import image7 from '../../assets/chowdeck/image (7).png'
 
 const ChowdeckMovingImages = () => {
   return (
-    <div>
+    <div className="mb-72">
       <div className="mx-7 container flex items-center justify-between px-2">
         <p className=" flex flex-col md:flex-row md:items-end text-6xl text-bold font-bold">
           Core Values

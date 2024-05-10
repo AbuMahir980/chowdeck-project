@@ -9,7 +9,7 @@ import hoaq from '../../assets/chowdeck/hoaq.png'
 const ChowdeckPort2 = () => {
   return (
     <div>
-      <div className="px-16  ">
+      <div className="px-16 mb-5 ">
         <div className=" border-4 border-black rounded-t-lg bg-white ">
           <span>
             <div className="flex justify-around rtl border-black outline-none border-solid">
