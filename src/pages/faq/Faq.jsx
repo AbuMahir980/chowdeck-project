@@ -4,6 +4,7 @@ import Ans from "../../shared/Ans"
 import Fotter from "../fotter/Fotter"
 import Checkout from "../checkout/Checkout"
 import Footer from "../../shared/footer/footer"
+import Banner from "../banner"
 
 
 const Faq = () => {
@@ -88,6 +89,7 @@ const Faq = () => {
             </div>
 
         </div>
+        <Banner/>
 
         <Footer />
 
