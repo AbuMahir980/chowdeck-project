@@ -5,8 +5,8 @@ import promocode from "../../assets/selim/Promo-code.svg"
 
 const Banner = () => {
     return(
-        <div className="flex w-[90%]  mx-auto gap-10 py-9">
-            <div className="w-[50%] bg-[#0c513f] rounded-[7px] h-[50rem] p-12 relative">
+        <div className="flex w-full  mx-auto gap-10 py-9">
+            <div className="w-[50%] bg-[#0c513f] rounded-[7px] max-h-full p-12 relative">
                 <h1 className="font-bold text-white text-[60px]">Place your <br />
                 order in seconds</h1>
                 <div className="bg-white rounded-[7px] p-4 w-[45%] mt-5">Download on Google Play</div>
@@ -17,7 +17,7 @@ const Banner = () => {
                 <p className="text-white font-medium absolute bottom-20">Get <span className="text-[#ffc501] ">₦300 off</span> your first order when you use <br /> this promo code!</p>
                 </div>
             </div>
-            <div className=""><img src={phonePic} alt="" /></div>
+            <div className="w-[50%] h-full"><img src={phonePic} alt="" /></div>
 
         </div>
     )

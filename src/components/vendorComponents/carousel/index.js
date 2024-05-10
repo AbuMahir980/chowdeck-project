@@ -20,7 +20,7 @@ function AutoPlay() {
         cssEase: "linear"
     };
     return (
-        <div className="slider-container">
+        <div className="slider-container overflow-hidden">
         <Slider {...settings}>
             <div className="px-6">
                 <img src={img1} alt="" />
