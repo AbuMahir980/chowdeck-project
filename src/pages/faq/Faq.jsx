@@ -3,6 +3,8 @@ import Questions from "../../shared/faq/Questions"
 import Ans from "../../shared/Ans"
 import Fotter from "../fotter/Fotter"
 import Checkout from "../checkout/Checkout"
+import Footer from "../../shared/footer/footer"
+import Banner from "../banner"
 
 
 const Faq = () => {
@@ -22,7 +24,7 @@ const Faq = () => {
                     <Questions onClick={() => handleCardNext(2)} text="What is chowdeck wallet ? " className={card === 2 ? "bg-black text-white" : "bg-white text-black"} />
                     <Questions onClick={() => handleCardNext(3)} text="What is chowscore ? " className={card === 3 ? "bg-black text-white" : "bg-white text-black"} />
                     <Questions onClick={() => handleCardNext(4)} text="What is service fee? " className={card === 4 ? "bg-black text-white" : "bg-white text-black"} />
-                    <Questions onClick={() => handleCardNext(5)} text="Why d0 we charge service fee ? " className={card === 5 ? "bg-black text-white" : "bg-white text-black"} />
+                    <Questions onClick={() => handleCardNext(5)} text="Why do we charge service fee ? " className={card === 5 ? "bg-black text-white" : "bg-white text-black"} />
                     <Questions onClick={() => handleCardNext(6)} text="What is surge fee ? " className={card === 6 ? "bg-black text-white" : "bg-white text-black"} />
                     <Questions onClick={() => handleCardNext(7)} text="Why do we charge surge fee ? " className={card === 7 ? "bg-black text-white" : "bg-white text-black"} />
                     <Questions onClick={() => handleCardNext(8)} text="how do i create an account on chowdeck ? " className={card === 8 ? "bg-black text-white" : "bg-white text-black"} />
@@ -87,6 +89,10 @@ const Faq = () => {
             </div>
 
         </div>
+        <Banner/>
+
+        <Footer />
+
         </>
     )
 }

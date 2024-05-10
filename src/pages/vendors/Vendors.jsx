@@ -9,6 +9,7 @@ import downArrow from '../../assets/vendors/networks/downArrow.svg';
 import Card from '../../components/vendorComponents/Card';
 import { networks } from '../../utils/ListItems';
 import AutoPlay from '../../components/vendorComponents/carousel';
+import Faq from '../faq/Faq';
 
 
 
@@ -69,7 +70,12 @@ const Vendors = () => {
             <div className='w-full flex justify-center items-end h-60 mt-8'>
                 <Community />
             </div>
+            <div>
                 <Story />
+            </div>
+            <div>
+                <Faq />
+            </div>
             
         </div>
     ); 
