@@ -11,6 +11,10 @@ body {
     background-color: rgb(255, 179, 206);
 }
 
+.babadona{
+    object-fit: cover;
+}
+
 /* .background_two {
     background-image: url('../../assets/backgroundTwo.svg');
     background-size: cover;

@@ -119,8 +119,8 @@ const Relay = () => {
 <img src={Pasta} alt="" />
 </div>
 
-<div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 w-full mx-4'>
-<div className='border-4 border-black rounded-xl overflow-hidden'>
+<div className='overflow-x-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 w-full h-[100%]mx-4'>
+<div className=' h-[90%] border-4 border-black rounded-xl overflow-hidden'>
   {/* first card */}
   <div className='w-full'>
   <img src={founders} alt="" />
@@ -142,20 +142,20 @@ const Relay = () => {
 </div>
 
 {/* second card */}
-<div className='border-4 border-black rounded-xl overflow-hidden'>
-  <div className='w-full object-cover  '>
+<div className=' h-[90%] border-4 border-black rounded-xl overflow-hidden'>
+  <div className='w-full   '>
   {/* <img src={helloFryday} alt="" /> */}
-  <img src={kFCThumbnail} alt="" />
+  <img src={kFCThumbnail} alt="" className='babadona w-full h-full' />
   </div>
  
  <div className='text-sm font-bold mt-5 text-center w-full'>
   <p>THE ECOSYSTEM MEETS KFC</p>
   </div>
-  <div className='mt-5'>
+  <div className='font-medium text-lg text-center mt-5 leading-6 px-4 mb-[120px] lg:mb-[130px]'>
     <p>We're thrilled to welcome KFC to our ever-evolving ecosystem!</p>
   </div>
 
-  <div className='w-56 h-12 bg-[#f3f6f5] hover:bg-[#0c513f] hover:text-[white] text-center mx-auto overflow-hidden rounded-lg'>
+  <div className='w-72 sm:w-72 h-12 bg-[#f3f6f5] hover:bg-[#0c513f] hover:text-[white] text-center mx-auto mb-4 overflow-hidden rounded-lg'>
   <button  className='py-3 w-[263px]'>
     <a href="">Read more</a>
   </button>
@@ -164,21 +164,21 @@ const Relay = () => {
 
 
   {/* third card */}
-  <div className='border-4 border-black rounded-xl overflow-hidden'>
+  <div className=' h-[90%] border-4 border-black rounded-xl overflow-hidden'>
   <div className=''>
-  <img src={introducingRelay} alt="" />
+  <img src={introducingRelay} alt="" className='w-full'/>
   </div>
  
- <div>
-  <p className=''>CHOWDECK SECURES $2.5 MILLION SEED FUNDING TO OPTIMIZE ON-DEMAND FOOD DELIVERY IN NIGERIA</p>
+ <div className='text-sm font-bold mt-5 text-center w-full'>
+  <p className=''>INTRODUCING RELAY BY CHOWDECK - A GAME CHANGER FOR LOGISTICS NATIONWIDE!</p>
   </div>
-  <div>
-    <p>we have secured $2.5 million in seed funding to optimize our operations and support expansion into more cities across the</p>
+  <div className='font-medium text-lg text-center mt-5 leading-6 px-4 mb-[120px] lg:mb-[130px]'>
+    <p>We're thrilled to introduce you to Relay, here to help you send and receive packages with</p>
   </div>
 
-  <div>
-  <button>
-    <a href=""></a>
+  <div className='w-72 sm:w-72 h-12 bg-[#f3f6f5] hover:bg-[#0c513f] hover:text-[white] text-center mx-auto  overflow-hidden rounded-lg'>
+  <button  className=' w-[263px]'>
+    <a href="">Read more</a>
   </button>
   </div>
 </div>
