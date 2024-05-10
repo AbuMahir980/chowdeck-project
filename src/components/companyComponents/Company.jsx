@@ -6,6 +6,8 @@ import hoverItems2 from "../../assets/chowdeck/trees.svg";
 // import tree from "../../assets/chowdeck/cloud-two.svg";
 import Navbar from "../../shared/Navbar";
 import TeamFocus from "./TeamFocus";
+import PeopleChowdeck from "./PeopleChowdeck";
+import JoinUs from "./JoinUs";
 
 const Company = () => {
   return (
@@ -28,6 +30,8 @@ const Company = () => {
 
       <ChowdeckMovingImages />
       <TeamFocus />
+      <PeopleChowdeck />
+      <JoinUs />
     </div>
   );
 };
