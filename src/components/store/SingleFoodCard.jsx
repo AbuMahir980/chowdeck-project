@@ -6,7 +6,7 @@ import orderIcon from '../relayComponents/relayAssets/orderIcon.png'
 import blackClock from '../relayComponents/relayAssets/blackClock.png'
 import CustomButton from "./storeButton/CustomButton";
 import { food } from "./data";
-import Layout from '../../pages/Store/Layout/index'
+import Layout from '../../pages/Store/Layout'
 import Card from "../../riders/storeComponent/Card";
 import Checkout from "../../pages/checkout/Checkout"
 
