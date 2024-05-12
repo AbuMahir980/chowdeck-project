@@ -8,9 +8,7 @@ const Cards = ({image,children, className}) => {
                 <img src={image} alt="" className='h-[14rem]'/>  
             </div>
         </div>
-       
 
-   
   )
 }
 

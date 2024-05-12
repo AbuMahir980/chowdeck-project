@@ -1,19 +1,18 @@
-const flowbite = require("flowbite-react/tailwind");
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./src/**/*.{js,jsx,ts,tsx}",
-    flowbite.content(),
-  ],
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+          fontFamily: {
+        "plusJakarta": ["Plus Jakarta Sans", "sans-serif"]
+      },
       backgroundImage:{
+        'bgImage':"url('/src/assets/customersImg/customerHerobg.svg')",
         'hero': "url('/src/assets/vendors/hero.svg')",
-      }
+        'riderBg': "url('/src/assets/farAssets1/bgImage1.svg')",
+      } 
     },
   },
-  plugins: [
-    flowbite.plugin(),
-  ],
-}
+  plugins: [],
+};
