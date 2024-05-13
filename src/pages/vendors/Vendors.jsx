@@ -29,11 +29,18 @@ const Vendors = () => {
                     <Buttons img={playStore} bgColor="bg-black" text="Download on Google Play" width="w-72" height="h-16" textWeight="font-medium" textSize="text-base"/>
                     <Buttons img={appStore} bgColor="bg-black" text="Download on App Store" width="w-72" height="h-16" textWeight="font-medium" textSize="text-base"/>
                 </div>
-                 
+                <div className='mb-10'></div>
+                <div className='mb-10'></div>
+                <div className='mb-10'></div>
+                <div className='mb-10'></div>
+                <div className='mb-10'></div>
+                <div className='mb-10'></div>
                 
-                <div className=' w-full absolute top-[60rem]'>
+                <div className=' w-full absolute top-[85rem]'>
                     <AutoPlay />    
                 </div>
+                <div className='mb-10'></div>
+                <div className='mb-10'></div>
                 <div className='mb-10'></div>
                 <div className='mb-10'></div>
                 <div className='mb-10'></div>
