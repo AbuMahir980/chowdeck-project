@@ -5,6 +5,9 @@ import hoverItems from "../../assets/chowdeck/web-bike-right.svg";
 import hoverItems2 from "../../assets/chowdeck/trees.svg";
 // import tree from "../../assets/chowdeck/cloud-two.svg";
 import Navbar from "../../shared/Navbar";
+import TeamFocus from "./TeamFocus";
+import PeopleChowdeck from "./PeopleChowdeck";
+import JoinUs from "./JoinUs";
 
 const Company = () => {
   return (
@@ -26,6 +29,9 @@ const Company = () => {
       <ChowdeckPort2 />
 
       <ChowdeckMovingImages />
+      <TeamFocus />
+      <PeopleChowdeck />
+      <JoinUs />
     </div>
   );
 };

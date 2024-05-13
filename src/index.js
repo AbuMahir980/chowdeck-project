@@ -48,10 +48,6 @@ const router = createBrowserRouter([
     element: <Relay />
   },
   {
-    path: '/riders',
-    element: <Riders />
-  },
-  {
     path: '/faqs',
     element: <FAQS />
   },
