@@ -19,6 +19,10 @@ import helloFryday from '../relayComponents/relayAssets/helloFryday.png'
 import introducingRelay from '../relayComponents/relayAssets/introducingRelay.png'
 import kFCThumbnail from '../relayComponents/relayAssets/kFCThumbnail.png'
 import Story from '../vendorComponents/Story'
+import Faq from '../../pages/faq/Faq'
+import appleLogo from '../relayComponents/relayAssets/appleLogo.svg'
+import packages from '../relayComponents/relayAssets/packages.svg'
+import Footer from '../../shared/footer/footer'
 
 
 
@@ -121,6 +125,65 @@ const Relay = () => {
       </div>
 
 <Story/>
+<div className='w-full mx-auto px-14 bg-black mt-64'>
+<Faq/>
+</div>
+
+<div className='bg-black'>
+<div className='flex m-16 gap-4 '>
+  
+  <div className='w-[50%] h-full relayback bg-[#990038] font-bold rounded-lg'>
+    <div className='p-10 relative'>
+      <div className='text-6xl'>
+      <p className=' text-[#ffb3ce]'>Send <span className='text-white'>and</span></p>
+    <p className=' text-[#ffb3ce]'>receive</p>
+    <p className='text-white'>swiftly</p>
+      </div>
+    
+
+    <div className='mt-8 '>
+    <div className='flex gap-2 border border-2 w-64 h-12 justify-center items-center rounded-lg bg-[#ffffff]'>
+      <img src={googlePlayStore} alt="" className='w-3' />
+      <p className='text-[#3c7465] text-base'>Download on Google Play</p>
+    </div>
+    <div className='flex gap-2 border border-2 w-64 h-12 justify-center items-center rounded-lg bg-[#ffffff] mt-4'>
+      <img src={appleLogo} alt="" className='w-4' />
+      <p className='text-[#3c7465] text-base'>Download on App Store</p>
+    </div>
+    </div>
+    
+    
+    
+
+    <div className='flex gap-2 w-52 mt-48 border border-2 border-black justify-center items-center h-14 bg-[#ffb3ce] rounded-lg'>
+      <div className='w-4 border-8 border-black bg-[#ffc501] rounded-2xl'></div>
+      <div className='text-lg font-bold'>USERELAY</div>
+    </div>
+    <div className='w-3/4 lg:w-1/2 mt-2'>
+    <p className='text-base font-normal text-white'>Get <span className='text-[#f1ab08]'>₦500 off</span>  your first relay when you use this promo code !</p>
+    </div>
+
+    <div className='absolute right bottom-0 right-0'>
+      <img src={packages} alt="" />
+    </div>
+    </div>
+    
+    
+  </div>
+ 
+  
+  
+  <div className='w-[50%] relaybackTwo rounded-lg'></div>
+</div>
+<Footer/>
+</div>
+
+<div>
+ 
+</div>
+
+
+
 
 
 
