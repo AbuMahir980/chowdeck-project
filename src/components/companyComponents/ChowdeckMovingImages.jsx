@@ -21,46 +21,38 @@ const ChowdeckMovingImages = () => {
           </span>
         </p>
       </div>
-      <div className="flex mt-24">
-        <div className="mx-5">
-          <marquee behavior="scroll" direction="left">
+
+      <div class="relative flex overflow-x-hidden">
+        <div class="py-12 flex animate-marquee whitespace-nowrap">
+          <span className="text-4xl mx-4">
             <img src={image} height="440px" className="min-w-[320px]" />
-          </marquee>
-        </div>
-        <div className="mx-5">
-          <marquee behavior="scroll" direction="left">
+          </span>
+          <span className="text-4xl mx-4">
             <img src={image1} height="440px" className="min-w-[320px]" />
-          </marquee>
-        </div>
-        <div className="mx-5">
-          <marquee behavior="scroll" direction="left">
+          </span>
+          <span className="text-4xl mx-4">
             <img src={image2} height="440px" className="min-w-[320px]" />
-          </marquee>
-        </div>
-        <div className="mx-5">
-          <marquee behavior="scroll" direction="left">
+          </span>
+          <span className="text-4xl mx-4">
             <img src={image3} height="440px" className="min-w-[320px]" />
-          </marquee>
-        </div>
-        <div className="mx-5">
-          <marquee behavior="scroll" direction="left">
+          </span>
+          <span className="text-4xl mx-4">
             <img src={image4} height="440px" className="min-w-[320px]" />
-          </marquee>
-        </div>
-        <div className="mx-5">
-          <marquee behavior="scroll" direction="left">
-            <img src={image5} height="440px" className="min-w-[320px]" />
-          </marquee>
-        </div>
-        <div className=" mx-5">
-          <marquee behavior="scroll" direction="left">
-            <img src={image6} height="440px" className="min-w-[320px]" />
-          </marquee>
-        </div>
-        <div className=" mx-5">
-          <marquee behavior="scroll" direction="left">
-            <img src={image7} height="440px" className="min-w-[320px]" />
-          </marquee>
+          </span>
+
+          <div className='realtive'>
+            <div className="absolute duration-700 flex animate-marquee2 whitespace-nowrap">
+              <span className="text-4xl mx-4">
+                <img src={image5} height="440px" className="min-w-[320px]" />
+              </span>
+              <span className="text-4xl mx-4">
+                <img src={image6} height="440px" className="min-w-[320px]" />
+              </span>
+              <span className="text-4xl mx-4">
+                <img src={image7} height="440px" className="min-w-[320px]" />
+              </span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
