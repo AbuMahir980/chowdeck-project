@@ -4,15 +4,13 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
-<<<<<<< HEAD
           fontFamily: {
         "plusJakarta": ["Plus Jakarta Sans", "sans-serif"]
       },
       backgroundImage:{
         'bgImage':"url('/src/assets/customersImg/customerHerobg.svg')",
         'hero': "url('/src/assets/vendors/hero.svg')",
-      } 
-=======
+      },
       animation: {
         marquee: "marquee 25s linear infinite",
         marquee2: "marquee2 25s linear infinite",
@@ -27,7 +25,6 @@ module.exports = {
           "100%": { transform: "translateX(0%)" },
         },
       },
->>>>>>> origin/lymyn
     },
   },
   plugins: [],
