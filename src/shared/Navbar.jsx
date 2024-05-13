@@ -6,6 +6,7 @@ import NavList from './components/NavList';
 import BrandLogo from './components/BrandLogo';
 import LgMenuList from './components/LgMenuList';
 import { Link } from "react-router-dom";
+import NavDropDown from './components/NavDropDown';
 
 
 const Navbar = () => {
@@ -22,9 +23,14 @@ const Navbar = () => {
                 <BrandLogo/>
 
                 <LgMenuList />
+                
             
-                <div className='flex gap-3'>
+                <div className='flex gap-3 relative'>
                     {/* <Client /> */}
+                    <div className='absolute top-0 right-14'>
+                        <NavDropDown />
+                    </div>
+                    
                     
                     <Link to="/store" className='bg-white rounded-full p-3'>
                         <img src={shoppingCart} alt="Shopping Cart" />
