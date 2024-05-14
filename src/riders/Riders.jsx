@@ -13,6 +13,10 @@ import bgImage1 from '../assets/farAssets1/bgImage1.svg'
 import icon2 from '../assets/farAssets1/icon2.svg'
 import dotIcon from '../assets/farAssets1/dotIcon.png'
 import Card from './SecondMappedCard/Card'
+import StoryCard from '../components/vendorComponents/StoryCard'
+import Stories from '../components/vendorComponents/Story'
+import Faq from '../pages/faq/Faq'
+import Fotter from '../pages/fotter/Fotter'
 // import Fotter from '../pages/fotter/Fotter'
 
 
@@ -96,6 +100,18 @@ const Riders = () => {
                         <img src={spaghImage} alt="" className=' ' />
                     </div>
                 </div>
+            </div>
+
+            <div>
+               <Stories />
+            </div>
+            
+            <div className='my-[7rem]'>
+                <Faq />
+            </div>
+
+            <div className="">
+                <Fotter/>
             </div>
 
             {/* <Card/> */}

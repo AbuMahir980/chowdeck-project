@@ -13,7 +13,7 @@ import Riders from './riders/Riders';
 import Vendors from './pages/vendors/Vendors';
 import FAQS from './pages/faq/Faq';
 import Blog from './pages/blog/Blog';
-import Store from './pages/Store/index';
+import Store from './pages/Store';
 import SignUpCard from './components/storeComponents/SignUpCard';
 import LogInCard from './components/storeComponents/LogInCard';
 import VerifyOtp from './pages/verfiyOtp/VerifyOtp';
@@ -21,12 +21,9 @@ import AddToCartCard from './components/addtocart/AddToCartCard';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Company from "./components/companyComponents/Company";
-// import MyOrders from "./components/companyComponents/MyOrders";
-// import Card from "./components/vendorComponents/Card";
 import SingleFoodCard from './components/store/SingleFoodCard';
-import Card from './riders/storeComponent/Card';
-import SecondCard from './riders/storeComponent/SecondCard';
-
+import AutoPlay from './components/vendorComponents/carousel';
+import Footer from './shared/footer/footer';
 // import reportWebVitals from './reportWebVitals';
 
 const router = createBrowserRouter([
@@ -85,8 +82,16 @@ const router = createBrowserRouter([
   {
     path: '/singlefoodcard/:id',
     element: <SingleFoodCard />
+  },
+  {
+    path: '/autoplay',
+    element: <AutoPlay />
+  },
+  {
+    path: '/footer',
+    element: <Footer />
   }
-  
+    
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

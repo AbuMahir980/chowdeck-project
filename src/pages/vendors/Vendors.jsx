@@ -8,13 +8,17 @@ import appStore from '../../assets/vendors/appStore.svg';
 import downArrow from '../../assets/vendors/networks/downArrow.svg';
 import Card from '../../components/vendorComponents/Card';
 import { networks } from '../../utils/ListItems';
+import AutoPlay from '../../components/vendorComponents/carousel';
+import Faq from '../faq/Faq';
+import Footer from '../../shared/footer/footer';
+import Banner from '../banner';
 
 
 
 
 const Vendors = () => {
     return (
-        <div className='w-screen'>
+        <div className='min-h-screen overflow-hidden'>
             <Navbar />
             <div 
             className="relative min-h-screen w-screen md:flex md:min-w-screen flex flex-col items-center justify-center gap-4 bg-hero bg-cover bg-no-repeat">
@@ -25,6 +29,9 @@ const Vendors = () => {
                     <Buttons img={playStore} bgColor="bg-black" text="Download on Google Play" width="w-72" height="h-16" textWeight="font-medium" textSize="text-base"/>
                     <Buttons img={appStore} bgColor="bg-black" text="Download on App Store" width="w-72" height="h-16" textWeight="font-medium" textSize="text-base"/>
                 </div>
+                {/* <div className='bg-green absolute top-10'> */}
+                    {/* <AutoPlay />     */}
+                {/* </div>  */}
                 <div className='mb-10'></div>
                 <div className='mb-10'></div>
                 <div className='mb-10'></div>
@@ -33,6 +40,7 @@ const Vendors = () => {
                 <div className='mb-10'></div>
                 <div className='mb-10'></div>
                 <div className='mb-10'></div>
+                
             </div>
             <div className='flex flex-col justify-center items-center'>
                 <div className='mb-10'></div>
@@ -64,7 +72,22 @@ const Vendors = () => {
             <div className='w-full flex justify-center items-end h-60 mt-8'>
                 <Community />
             </div>
+            <div>
                 <Story />
+            </div>
+            <div className='w-full mx-auto px-14 bg-black mt-64'>
+                <div className='' >    
+                    <Faq />
+                </div>
+            </div>
+            <div className='flex flex-col mx-auto px-14 bg-black'>
+                <div className="" >
+                    <Banner/>
+                </div>
+                <div className="">
+                    <Footer />
+                </div>
+            </div>
         </div>
     ); 
 
