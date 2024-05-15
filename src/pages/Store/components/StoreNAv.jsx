@@ -34,8 +34,7 @@ const Index = () => {
           
         </div>
         <div className="flex gap-2 items-center">
-        <CiWallet />
-          <p>Wallet Balance (#0)</p>
+        <CiWallet /> <p>Wallet Balance (#0)</p>
         </div>
       </div>
       <div className="flex gap-2">

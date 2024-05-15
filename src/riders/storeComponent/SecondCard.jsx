@@ -1,5 +1,6 @@
 import React from 'react'
 import { datas } from './SecondIndex'
+import logo from '../../assets/far assets1/compass.png' 
 
 const SecondCard = () => {
     return (
@@ -11,20 +12,19 @@ const SecondCard = () => {
                         <h1>{data.text1}</h1>
                     </div>
                 ))} */}
-                      {datas.map((data, i) => {
-                        return(
-                    <div key={i} className='flex flex-col justify-center items-center gap-y-5'>
+             
+               
+                    <div className='flex flex-col justify-center items-center gap-y-5'>
                         
-                        <img src={data.image} alt="" className='w-24 flex items-center'/>
+                        <img src={logo} alt="" className='w-24 flex items-center'/>
                         <div className="flex flex-col justify-center   items-center ">
-                        <h1 className='text-[#9ca3af]'>{data.text1}</h1>
+                        <h1 className='text-[#9ca3af]'>Nothing found here!</h1>
                         
                         
-                        <h1 className='text-[#9ca3af]'>{data.text2}</h1>
+                        <h1 className='text-[#9ca3af]'>Please try another category</h1>
                         </div>
-                    </div>)
- } )}
-            </div>
+                    </div>
+          </div>
 
         </div>
     )
