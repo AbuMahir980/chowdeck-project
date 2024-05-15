@@ -119,7 +119,7 @@ export const categoryData = [
             background: "#fff3ed"
         },
         {
-            id: 3,
+            id: "4317d633-8811-4f23-aeeb-7d348579c516",
             image: pharmacy,
             text: "Pharmacy",
             background: "#ebf4ff"
@@ -131,13 +131,13 @@ export const categoryData = [
             background: "#fff8e4"
         },
         {
-            id: 5,
+            id: "7059d633-9809-4f23-aeeb-7d348579c516",
             image: fitFam,
             text: "Fit Fam",
             background: "#daefe3"
         },
         {
-            id: 6,
+            id: "9507d633-9809-4f23-aeeb-7d348579c516",
             image: drinks,
             text: "Drinks",
             background: "#fff8e4"

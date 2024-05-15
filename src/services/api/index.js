@@ -4,6 +4,8 @@ const SIGNUP_VERIFY_OTP = `${process.env.REACT_APP_BASE_URL}/verify`
 const SIGNUP_RESEND_OTP = `${process.env.REACT_APP_BASE_URL}/resend-otp/:email`
 const LOGIN_URL = `${process.env.REACT_APP_BASE_URL}/login`
 const CUSTOMER_DETAILS = `${process.env.REACT_APP_BASE_URL}/customer`
+const PRODUCT_CATEGORY = `${process.env.REACT_APP_BASE_URL}/categories`
+const PRODUCTS = `${process.env.REACT_APP_BASE_URL}/products`
 
 
 
@@ -14,5 +16,7 @@ export {
     SIGNUP_VERIFY_OTP,
     SIGNUP_RESEND_OTP,
     LOGIN_URL,
-    CUSTOMER_DETAILS
+    CUSTOMER_DETAILS,
+    PRODUCT_CATEGORY,
+    PRODUCTS
 }
