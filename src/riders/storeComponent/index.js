@@ -1,4 +1,4 @@
-import foodLogo from '../../assets/far assets1/food.jpg'
+import foodLogo from '../../assets/farAssets1/food.jpg'
 export const datas = [
 {
     heading:"Chow Combo - Amala",

@@ -1,4 +1,4 @@
-import logo from '../../assets/far assets1/compass.png' 
+import logo from '../../assets/farAssets1/compass.png' 
 const Empty = () => {
  
     return (
