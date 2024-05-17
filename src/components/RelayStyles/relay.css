@@ -1,7 +1,18 @@
+
+body {
+    overflow-x: hidden;
+  }
+  
+
+
 .background_container {
     background-image: url('../../components/relayComponents/relayAssets/relaybackgrooundone.svg');
     background-size: cover;
     background-color: rgb(255, 179, 206);
+}
+
+.babadona{
+    object-fit: cover;
 }
 
 /* .background_two {
@@ -85,5 +96,11 @@
     }
   } */
   
+  /* .relayback {
+    background-image: url('../relayComponents/relayAssets/bgFive.svg');
+  } */
 
+  .relaybackTwo{
+    background-image: url('../relayComponents/relayAssets/image.jpeg');
+  }
    
