@@ -21,7 +21,7 @@ const ChowdeckFocus = ({Focus}) => {
           className="text-[#FFC501]"
         />
         <span className="text-[1.5rem] mr-11 pr-7  leading-loose md:text-2xl ">
-          <span className=" mr-5">{Focus}</span>
+          <span className="mr-5">{Focus}</span>
         </span>
       </p>
     </div>

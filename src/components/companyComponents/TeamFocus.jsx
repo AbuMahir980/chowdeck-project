@@ -12,6 +12,28 @@ const TeamFocus = () => {
         setTeams(team)
     }
 
+    const eightFocus = () => {
+        require (
+            <ul>
+                    <li>
+                      Recruiting, training & onboarding the best of talents.
+                    </li>
+                    <li>
+                      The monthly processing of the payroll, tax and pension &
+                      employees benefits.
+                    </li>
+                    <li>
+                      Neutralizing conflicts and enforcing a safe space for
+                      employees.
+                    </li>
+                    <li>
+                      Creating and updating company policies to guide the smooth
+                      running of the work place and prevent infractions of any
+                      kind.
+                    </li>
+                  </ul>
+        )
+    }
 
   return (
     <div>
@@ -150,7 +172,7 @@ const TeamFocus = () => {
               <ChowdeckFocus Focus="We create desirable product, brand and growth experiences for our customers with the core belief that form and function are equally important parts for great design to happen. Our work constantly accepts off-the-wall methods, we embrace empathy and are focused on creating experiences that cause remarkable change." />
             )}
 
-            {teams === 7 && <LastChowdeckFocus />}
+            {teams === 7 && <ChowdeckFocus Focus={eightFocus} />}
           </div>
         </div>
       </div>

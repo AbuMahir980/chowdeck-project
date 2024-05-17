@@ -4,7 +4,7 @@ import Fotter from '../../fotter/Fotter'
 
 const Layout = ({children}) => {
     return(
-        <div>
+        <div className='w-[75%] mx-auto'>
             <StoreNav />
             <div>
                 {children}
