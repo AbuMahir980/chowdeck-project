@@ -25,24 +25,34 @@ const Vendors = () => {
                 <div className='mb-10'></div>
                 <h1 className='font-bold text-6xl text-center mt-40 tracking-tighter align-bottom md:container md:text-left md:text-8xl md:text-balance md:ml-5 lg:container lg:px-auto lg:text-left lg:text-balance lg:text-9xl lg:ml-5 lg:leading-tight lg:tracking-tighter mb-5'>Grow your Food Business</h1>
 
-                <div className='flex flex-col justify-center md:flex md:flex-row gap-4 md:justify-start md:self-start md:container md:ml-5 lg:container lg:mx-auto lg:px-4 xl:container xl:mx-auto xl:px-4'>
+                <div className='flex flex-col justify-center md:flex md:flex-row gap-4 md:justify-start md:self-start md:container md:ml-5 lg:container lg:mx-auto  xl:container xl:mx-auto'>
                     <Buttons img={playStore} bgColor="bg-black" text="Download on Google Play" width="w-72" height="h-16" textWeight="font-medium" textSize="text-base"/>
                     <Buttons img={appStore} bgColor="bg-black" text="Download on App Store" width="w-72" height="h-16" textWeight="font-medium" textSize="text-base"/>
                 </div>
-                {/* <div className='bg-green absolute top-10'> */}
-                    {/* <AutoPlay />     */}
-                {/* </div>  */}
-                <div className='mb-10'></div>
-                <div className='mb-10'></div>
-                <div className='mb-10'></div>
-                <div className='mb-10'></div>
-                <div className='mb-10'></div>
-                <div className='mb-10'></div>
-                <div className='mb-10'></div>
-                <div className='mb-10'></div>
+                 
                 
+                <div className=' w-full absolute top-[60rem]'>
+                    <AutoPlay />    
+                </div>
+                <div className='mb-10'></div>
+                <div className='mb-10'></div>
+                <div className='mb-10'></div>
+                <div className='mb-10'></div>
+                <div className='mb-10'></div>
+                <div className='mb-10'></div>
+                <div className='mb-10'></div>
+                <div className='mb-10'></div>
             </div>
             <div className='flex flex-col justify-center items-center'>
+                <div className='mb-10'></div>
+                <div className='mb-10'></div>
+                <div className='mb-10'></div>
+                <div className='mb-10'></div>
+                <div className='mb-10'></div>
+                <div className='mb-10'></div>
+                <div className='mb-10'></div>
+                <div className='mb-10'></div>
+                <div className='mb-10'></div>
                 <div className='mb-10'></div>
                 <div className='mb-10'></div>
                 <div className='mb-10'></div>
