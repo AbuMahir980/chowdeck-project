@@ -32,9 +32,10 @@ const Store = () => {
              return { ...item , ...foundObj }
     
             })
-    
+
             setCategoryData(newCategoryData)
             setProductData(products.data.data)
+            localStorage.setItem('product', JSON.stringify(products.data.data))
     
     
            })()

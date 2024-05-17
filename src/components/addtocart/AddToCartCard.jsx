@@ -18,11 +18,11 @@ const AddToCartCard = ({ handleToggleModal }) => {
     }
 
     return (
-        <div className='bg-black bg-opacity-60 w-full min-h-screen flex justify-center fixed top-0' id='closeModal' onClick={handleCloseModal} >
-            <div className='max-h-[95vh] w-[90vw] bg-white rounded-3xl overflow-y-auto text-center  pb-5 mt-5 sm:px-20 md:w-[65vw] md:overflow-hidden lg:w-[55vw] xl:w-[40vw]'>
+        <div className='bg-black bg-opacity-60 w-full  left-0 right-0 min-h-screen flex justify-center fixed top-0' id='closeModal' onClick={handleCloseModal} >
+            <div className='max-h-[75vh] w-[90vw] bg-white rounded-3xl overflow-y-auto text-center  pb-5 mt-5 sm:px-20 md:w-[65vw] md:overflow-hidden lg:w-[55vw] xl:w-[40vw]'>
 
                 <p className='cursor-pointer' onClick={handleToggleModal}   >x</p>
-                <div className=' mb-5 sm:flex min-w-[50%] mx-auto px-10 md:px-0 lg:h-[60%]'>
+                <div className=' mb-5 sm:flex min-w-[50%] mx-auto px-10 md:px-0 lg:h-[30%]'>
                     <img src={efoEgusi} alt="" className='w-full' />
                 </div>
                 <div className='flex flex-col items-start mx-5 mb-3 md:mx-[-50px] md:flex md:flex-row'>
