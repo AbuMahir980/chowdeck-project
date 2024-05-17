@@ -10,6 +10,7 @@ module.exports = {
       backgroundImage:{
         'bgImage':"url('/src/assets/customersImg/customerHerobg.svg')",
         'hero': "url('/src/assets/vendors/hero.svg')",
+        'riderBg': "url('/src/assets/farAssets1/bgImage1.svg')",
       } 
     },
   },

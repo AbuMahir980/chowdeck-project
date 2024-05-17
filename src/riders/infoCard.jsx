@@ -18,10 +18,10 @@ const InfoCard = ({ images, interval }) => {
         return () => clearInterval(setInt)
     }, [currentIndex, interval])
     return (
-        <div className="flex h-[35rem] ">
+        <div className="flex md:h-[35rem]  h-[20rem] overflow-hidden">
             <div className="flex flex-col justify-between">
                 <div className='space-y-6'>
-                    <h1 className="font-black text-[40px] w-[700px] leading-[60px]">{images[currentIndex].text}</h1>
+                    <h1 className="font-black md:text-[40px]  md:w-[700px] w-[300px] md:leading-[60px]">{images[currentIndex].text}</h1>
                     {/* <p className="text-[20px] w-[350px]">Monitor your growth and earn huge bonuses as you go.</p> */}
                     <div className="flex gap-2">
                         <div className='flex h-[50px] w-[50px] bg-green-700 rounded-full justify-center items-center' > <img src={playstore} alt="" className='w-[1rem] ' /></div>

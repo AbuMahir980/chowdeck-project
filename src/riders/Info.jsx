@@ -28,7 +28,7 @@ const Info = () => {
 
 
   return (
-    <div className='mx-7 bg-white border-black border-4 rounded-[30px] p-7 z-10 relative top-[-180px] '>
+    <div className='mx-7 bg-white border-black border-4 rounded-[30px] p-7 z-10 relative top-[-100px] '>
     
     
       <InfoCard images={images} interval={3000} />

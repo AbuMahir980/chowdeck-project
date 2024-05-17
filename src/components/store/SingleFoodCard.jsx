@@ -6,12 +6,13 @@ import orderIcon from '../relayComponents/relayAssets/orderIcon.png'
 import blackClock from '../relayComponents/relayAssets/blackClock.png'
 import CustomButton from "./storeButton/CustomButton";
 import { food } from "./data";
-import Layout from '../../pages/Store/Layout'
+import Layout from '../../pages/Store/Layout';
 import Card from "../../riders/storeComponent/Card";
 import Checkout from "../../pages/checkout/Checkout"
+import AddToCartCard from "../addtocart/AddToCartCard";
 
 const SingleFoodCard = () => {
-    // console.log('food:', food)
+  // console.log('food:', food)
 
       const { id } = useParams()
       const data = localStorage.getItem('product') ? JSON.parse(localStorage.getItem('product')) : {}
@@ -19,9 +20,17 @@ const SingleFoodCard = () => {
       // console.log('data:', data)
       const [isactive, setIsactive] = useState(1)
 
-    const handleClick =(isactive)=>{
+      const [toggleModal, setToggleModal] = useState(false)
+
+      function handleToggleModal(){
+    
+        setToggleModal(!toggleModal)
+      }
+    
+      const handleClick = (isactive) => {
         setIsactive(isactive)
       }
+
       return (
         <Layout>
           <div className="flex px-4">
@@ -32,7 +41,8 @@ const SingleFoodCard = () => {
                         <CustomButton image={blackClock} text ='51-61 mins'/> 
                         <CustomButton image={orderIcon} text ='Pre-order'/> 
                 </div>
-              </div>
+
+
 
               <div className="block md:flex md:justify-between mt-6">
                 <div className="w-[104px] h-[35px] md:w-[208px] md:h-[72px]">
@@ -47,14 +57,20 @@ const SingleFoodCard = () => {
                     <Button onClick={()=>{handleClick(3)}} isactive={isactive} text='Pick-up' cond={3}/>
                 </div>
               </div>
-              <Card />
-            </div>
+            <Card handleToggleModal={handleToggleModal} />
+  
             <div className="w-[40%]">
               <Checkout />
             </div>
-          </div>
+        </div>
+        </div>
+        </div>
+        {
+        toggleModal &&  <AddToCartCard  handleToggleModal={handleToggleModal}  />
+      }
         </Layout>
-      );
+  
+  );
 };
 
 export default SingleFoodCard;
