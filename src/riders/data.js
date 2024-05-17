@@ -1,12 +1,12 @@
-import cardImage1 from  '../assets/far assets1/cardImage1.png'
-import cardImage2 from '../assets/far assets1/cardImage2.png'
-import cardImage3 from '../assets/far assets1/cardImage3.png'
-import icon1 from '../assets/far assets1/icon11.svg'
-import icon2 from '../assets/far assets1/icon2.svg'
-import icon3 from '../assets/far assets1/icon3.svg'
-import crewImage from '../assets/far assets1/crew image.jpg'
-import kfcImage from '../assets/far assets1/kfcImage.png'
-import purpleImage  from '../assets/far assets1/purpleImage.png'
+import cardImage1 from  '../assets/farAssets1/cardImage1.png'
+import cardImage2 from '../assets/farAssets1/cardImage2.png'
+import cardImage3 from '../assets/farAssets1/cardImage3.png'
+import icon1 from '../assets/farAssets1/icon11.svg'
+import icon2 from '../assets/farAssets1/icon2.svg'
+import icon3 from '../assets/farAssets1/icon3.svg'
+import crewImage from '../assets/farAssets1/crew image.jpg'
+import kfcImage from '../assets/farAssets1/kfcImage.png'
+import purpleImage  from '../assets/farAssets1/purpleImage.png'
 
 
 export const cardDatas = 
