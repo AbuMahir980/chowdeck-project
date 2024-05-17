@@ -17,6 +17,7 @@ import StoryCard from '../components/vendorComponents/StoryCard'
 import Stories from '../components/vendorComponents/Story'
 import Faq from '../pages/faq/Faq'
 import Fotter from '../pages/fotter/Fotter'
+import Banner from '../pages/banner'
 // import Fotter from '../pages/fotter/Fotter'
 
 
@@ -111,7 +112,7 @@ const Riders = () => {
             </div>
 
             <div className="">
-                <Fotter/>
+                <Banner/>
             </div>
 
             {/* <Card/> */}
