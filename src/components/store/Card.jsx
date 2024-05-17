@@ -7,9 +7,15 @@ import { FaClock } from "react-icons/fa";
 
 // const Card = ({loveIcon,image,name,clock,time, route}) => {
   const Card = (props) => {
+
+  localStorage.setItem('product', JSON.stringify(props))
+
   return (
+
     <>
-    <Link to={props.product_id}>
+    
+    
+    <Link to={`/singlefoodcard/${props.product_id}`}>
       <div className='w-full rounded-lg  bg-[white] cursor-pointer hover:shadow-md'>
         <div className='p-2 relative'>
             <div className='absolute left-[21px] top-[12px] bg-[#ffc501] rounded-full w-[32px] h-[32px] flex justify-center'>
