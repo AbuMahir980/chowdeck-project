@@ -15,30 +15,30 @@ const Store = () => {
     
     useEffect(() => {
         (async() => {
-            const productCategoryCall = await axios({
-                method: 'GET',
-                url: PRODUCT_CATEGORY
-            })
-    
-            const products = await axios({
-                method: "GET",
-                url: PRODUCTS
-            })
-    
-    
-            const newCategoryData = productCategoryCall.data.data.map((item)=> {
-                    const foundObj = catData.find((item2) => item.category_id == item2.id)
-       
-             return { ...item , ...foundObj }
-    
-            })
+                const productCategoryCall = await axios({
+                    method: 'GET',
+                    url: PRODUCT_CATEGORY
+                })
+        
+                const products = await axios({
+                    method: "GET",
+                    url: PRODUCTS
+                })
+        
+        
+                const newCategoryData = productCategoryCall.data.data.map((item)=> {
+                        const foundObj = catData.find((item2) => item.category_id == item2.id)
+        
+                return { ...item , ...foundObj }
+        
+                })
 
-            setCategoryData(newCategoryData)
-            setProductData(products.data.data)
-            localStorage.setItem('product', JSON.stringify(products.data.data))
-    
-    
-           })()
+                setCategoryData(newCategoryData)
+                setProductData(products.data.data)
+                localStorage.setItem('product', JSON.stringify(products.data.data))
+        
+        
+            })()
     }, [])
     return(
         <Layout>

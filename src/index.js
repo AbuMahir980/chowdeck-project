@@ -24,6 +24,7 @@ import Company from "./components/companyComponents/Company";
 import SingleFoodCard from './components/store/SingleFoodCard';
 import AutoPlay from './components/vendorComponents/carousel';
 import Footer from './shared/footer/footer';
+import Payment from './pages/Store/payment';
 // import reportWebVitals from './reportWebVitals';
 
 const router = createBrowserRouter([
@@ -90,6 +91,10 @@ const router = createBrowserRouter([
   {
     path: '/footer',
     element: <Footer />
+  },
+  {
+    path: '/payment',
+    element: <Payment />
   }
     
 ]);
