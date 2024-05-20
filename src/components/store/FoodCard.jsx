@@ -3,6 +3,9 @@ import Card from './Card'
 import Empty from '../../components/Empty'
 
 const FoodCard = ({foodData}) => {
+
+ 
+
   return (
     <>
 
