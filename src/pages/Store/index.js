@@ -7,6 +7,7 @@ import { PRODUCT_CATEGORY,  PRODUCTS } from '../../services/api'
 import axios from 'axios'
 import { useEffect, useState } from 'react'
 import { categoryData as catData } from '../../utils/ListItems'
+import { LuAlignVerticalJustifyEnd } from 'react-icons/lu';
 
 const Store = () => {
 
@@ -24,8 +25,9 @@ const Store = () => {
                     method: "GET",
                     url: PRODUCTS
                 })
-        
-        
+
+            
+                //was to map the icon in the catData to the date coing from the backend
                 const newCategoryData = productCategoryCall.data.data.map((item)=> {
                         const foundObj = catData.find((item2) => item.category_id == item2.id)
         
