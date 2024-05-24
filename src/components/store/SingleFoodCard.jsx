@@ -11,6 +11,8 @@ import Card from "../../riders/storeComponent/Card";
 import Checkout from "../../pages/checkout/Checkout"
 import AddToCartCard from "../addtocart/AddToCartCard";
 import CardItem from "../../riders/storeComponent/CardItem";
+import {payment} from "../../pages/Store/payment/data";
+import Payment from "../../pages/Store/payment";
 
 const SingleFoodCard = () => {
   // console.log('food:', food)
@@ -23,14 +25,13 @@ const SingleFoodCard = () => {
 
       console.log('singleProducts --:', singleProducts)
       const [isactive, setIsactive] = useState(1)
+      const [paymentItems, setPaymentItems] = useState([])
 
-      const [toggleModal, setToggleModal] = useState(false)
 
-      function handleToggleModal(){
-    
-        setToggleModal(!toggleModal)
+      const handleCart = () => {
+        const paymentData = []
+        paymentData.push()
       }
-    
       const handleClick = (isactive) => {
         setIsactive(isactive)
       }
@@ -69,7 +70,7 @@ const SingleFoodCard = () => {
       
                   
                     singleProducts.map((item, id) => (
-                      <CardItem key={id} items={item.products}  onClick={handleToggleModal} />
+                      <CardItem key={id} items={item.products} setPaymentItems={setPaymentItems}/>
                         
                     
                   ))
@@ -80,14 +81,14 @@ const SingleFoodCard = () => {
                 
               </div>
               <div className="w-[40%]">
-                    <Checkout />
-                  </div>
+                {
+                  (paymentItems.length > 0) ? <Payment items={paymentItems} storeName={data[0].store_name} setPaymentItems={setPaymentItems}/> : <Checkout />
+                }
+                </div>
             </div>
         
       
-          {
-          toggleModal &&  <AddToCartCard items={singleProducts.products} handleToggleModal={handleToggleModal}  />
-        }
+          
           </Layout>
     
     );
